@@ -20,80 +20,74 @@
     "klime": {
       "brand": "Kevin's Natural Foods",
       "nm": "Cilantro Lime Chicken",
-      "note": "Fully cooked · GF + DF",
+      "note": "Certified GF · DF · Paleo/Keto · fully cooked",
       "q": "Kevins Natural Foods Cilantro Lime Chicken"
     },
     "ksich": {
       "brand": "Kevin's Natural Foods",
-      "nm": "Sichuan Chicken & Green Beans",
-      "note": "GF + DF · ~5 min",
-      "q": "Kevins Natural Foods Sichuan Chicken"
+      "nm": "Sichuan Chicken Green Bean Stir-Fry",
+      "note": "GF + DF · coconut aminos · ~5 min",
+      "q": "Kevins Natural Foods Sichuan Chicken Green Bean Stir Fry"
     },
     "klemon": {
       "brand": "Kevin's Natural Foods",
-      "nm": "Lemongrass Basil Chicken",
-      "note": "GF + DF · no refined sugar",
-      "q": "Kevins Natural Foods Lemongrass Basil Chicken"
+      "nm": "Lemongrass Chicken",
+      "note": "Certified GF · DF · coconut milk sauce",
+      "q": "Kevins Natural Foods Lemongrass Chicken"
     },
     "kkorean": {
       "brand": "Kevin's Natural Foods",
-      "nm": "Korean-Style BBQ Chicken",
-      "note": "GF + DF · coconut aminos",
-      "q": "Kevins Natural Foods Korean BBQ Chicken"
+      "nm": "Korean BBQ-Style Chicken",
+      "note": "Certified GF · DF · coconut aminos bulgogi sauce",
+      "q": "Kevins Natural Foods Korean BBQ Style Chicken"
     },
     "kroast": {
       "brand": "Kevin's Natural Foods",
       "nm": "Roasted Garlic Chicken",
-      "note": "GF + DF · high protein",
+      "note": "Certified GF · DF · coconut milk cream sauce",
       "q": "Kevins Natural Foods Roasted Garlic Chicken"
     },
     "kbeef": {
       "brand": "Kevin's Natural Foods",
       "nm": "Mongolian-Style Beef",
-      "note": "GF + DF · check label",
-      "q": "Kevins Natural Foods Mongolian Beef"
+      "note": "Certified GF · DF · grass-fed · coconut aminos",
+      "q": "Kevins Natural Foods Mongolian Style Beef"
+    },
+    "kthai": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Thai-Style Coconut Chicken",
+      "note": "Certified GF · DF · coconut milk sauce",
+      "q": "Kevins Natural Foods Thai Style Coconut Chicken"
     },
     "sthai": {
       "brand": "Saffron Road",
-      "nm": "Thai Green Curry Chicken",
-      "note": "Certified GF · coconut-based (DF)",
-      "q": "Saffron Road Thai Green Curry Chicken"
+      "nm": "Coconut Curry Chicken",
+      "note": "Certified GF · coconut-based (DF) · frozen meal",
+      "q": "Saffron Road Coconut Curry Chicken gluten free"
     },
     "slemon": {
       "brand": "Saffron Road",
       "nm": "Lemongrass Basil Chicken",
-      "note": "Certified GF · confirm DF",
-      "q": "Saffron Road Lemongrass Basil Chicken"
+      "note": "Certified GF · DF · frozen meal",
+      "q": "Saffron Road Lemongrass Basil Chicken gluten free"
     },
     "smoroc": {
       "brand": "Saffron Road",
-      "nm": "Moroccan-Style Chicken",
-      "note": "Certified GF · confirm DF",
-      "q": "Saffron Road Moroccan Chicken"
-    },
-    "hckorean": {
-      "brand": "Healthy Choice Power Bowls",
-      "nm": "Korean-Inspired Beef Bowl",
-      "note": "GF + DF · verify label",
-      "q": "Healthy Choice Power Bowl Korean Beef"
-    },
-    "hccuban": {
-      "brand": "Healthy Choice Power Bowls",
-      "nm": "Cuban-Inspired Pork Bowl",
-      "note": "GF + DF · verify label",
-      "q": "Healthy Choice Power Bowl Cuban Pork"
+      "nm": "Moroccan Inspired Chicken & Potatoes",
+      "note": "Certified GF · confirm DF · frozen meal",
+      "q": "Saffron Road Moroccan Inspired Chicken Potatoes gluten free"
     },
     "amychili": {
       "brand": "Amy's",
       "nm": "Black Bean Chili",
       "note": "GF + DF (dairy-free SKU)",
-      "q": "Amys Black Bean Chili gluten free"
+      "q": "Amys Black Bean Chili gluten free dairy free"
     },
     "amythai": {
       "brand": "Amy's",
       "nm": "Thai Coconut Curry Bowl",
       "note": "GF + DF · coconut-based",
-      "q": "Amys Thai Coconut Curry Bowl gluten free"
+      "q": "Amys Thai Coconut Curry Bowl gluten free dairy free"
     },
     "rx": {
       "brand": "RXBAR",
@@ -462,62 +456,62 @@
   "rotation": [
     {
       "entrees": [
+        "kkorean",
         "klime",
-        "ksich",
         "sthai",
-        "hckorean",
+        "kthai",
         "amychili"
       ],
       "snacks": [
-        "rx",
-        "ejcook",
-        "skinny",
         "chomps",
+        "rx",
         "hippeas",
-        "thats"
-      ]
-    },
-    {
-      "entrees": [
-        "klemon",
-        "kkorean",
-        "smoroc",
-        "hccuban",
-        "amythai"
-      ],
-      "snacks": [
-        "go",
-        "ejbite",
-        "lara",
-        "jerky",
-        "bada",
-        "marys"
+        "skinny",
+        "thats",
+        "ejcook"
       ]
     },
     {
       "entrees": [
         "kroast",
-        "kbeef",
+        "klemon",
         "slemon",
-        "hckorean",
-        "sthai"
+        "amythai",
+        "kbeef"
+      ],
+      "snacks": [
+        "go",
+        "lara",
+        "jerky",
+        "bada",
+        "marys",
+        "ejbite"
+      ]
+    },
+    {
+      "entrees": [
+        "ksich",
+        "kthai",
+        "smoroc",
+        "amychili",
+        "klime"
       ],
       "snacks": [
         "rx",
-        "madegood",
         "dang",
         "chomps",
         "biena",
+        "madegood",
         "skinny"
       ]
     },
     {
       "entrees": [
-        "klime",
         "kkorean",
-        "smoroc",
-        "hccuban",
-        "amychili"
+        "kroast",
+        "sthai",
+        "amythai",
+        "klemon"
       ],
       "snacks": [
         "go",
@@ -530,11 +524,11 @@
     },
     {
       "entrees": [
+        "kbeef",
         "ksich",
-        "klemon",
-        "sthai",
-        "hccuban",
-        "amythai"
+        "slemon",
+        "kthai",
+        "amychili"
       ],
       "snacks": [
         "ejcook",
@@ -547,19 +541,19 @@
     },
     {
       "entrees": [
-        "kroast",
-        "kkorean",
+        "klime",
+        "klemon",
         "smoroc",
-        "hckorean",
-        "amychili"
+        "kroast",
+        "amythai"
       ],
       "snacks": [
         "go",
         "madegood",
         "skinny",
         "jerky",
-        "hippeas",
-        "simple"
+        "simple",
+        "rx"
       ]
     }
   ],
