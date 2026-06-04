@@ -8,9 +8,9 @@ A personal gluten-free / dairy-free meal system, in two parts:
    - **Order**: rotating ready-made entrées + snacks (4- or 6-week loop, auto-detects current week)
    - **Eat**: daily meal plan with macros + per-meal appliance & hands-on-minutes tags
    - **Shop**: Sunday-to-Sunday grocery list with Walmart/Instacart links + Instacart bulk-add copy
-   Has an Auto/Light/Dark theme toggle. Fetches `data/galley-data.json` on load; persists state via `localStorage`.
+   Has an Auto/Light/Dark theme toggle and ⚓ anchor favicon. Fetches `data/galley-data.json` on load; persists state via `localStorage`.
 
-2. **`galley-pipeline/`** — a cron job that refreshes the app's data weekly. The app shell never regenerates; only `data/galley-data.json` does.
+2. **`.github/workflows/`** — CI (`ci.yml`: lint + validate on PRs) and the weekly refresh pipeline (`refresh.yml`: Claude API → bot PR → auto-merge).
 
 ## Project layout
 
