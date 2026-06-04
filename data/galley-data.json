@@ -1,0 +1,1032 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-06-04",
+  "targets": {
+    "calLo": 2800,
+    "calHi": 3200,
+    "pLo": 180,
+    "pHi": 220
+  },
+  "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+  ],
+  "catalog": {
+    "klime": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Cilantro Lime Chicken",
+      "note": "Fully cooked · GF + DF",
+      "q": "Kevins Natural Foods Cilantro Lime Chicken"
+    },
+    "ksich": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Sichuan Chicken & Green Beans",
+      "note": "GF + DF · ~5 min",
+      "q": "Kevins Natural Foods Sichuan Chicken"
+    },
+    "klemon": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Lemongrass Basil Chicken",
+      "note": "GF + DF · no refined sugar",
+      "q": "Kevins Natural Foods Lemongrass Basil Chicken"
+    },
+    "kkorean": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Korean-Style BBQ Chicken",
+      "note": "GF + DF · coconut aminos",
+      "q": "Kevins Natural Foods Korean BBQ Chicken"
+    },
+    "kroast": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Roasted Garlic Chicken",
+      "note": "GF + DF · high protein",
+      "q": "Kevins Natural Foods Roasted Garlic Chicken"
+    },
+    "kbeef": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Mongolian-Style Beef",
+      "note": "GF + DF · check label",
+      "q": "Kevins Natural Foods Mongolian Beef"
+    },
+    "sthai": {
+      "brand": "Saffron Road",
+      "nm": "Thai Green Curry Chicken",
+      "note": "Certified GF · coconut-based (DF)",
+      "q": "Saffron Road Thai Green Curry Chicken"
+    },
+    "slemon": {
+      "brand": "Saffron Road",
+      "nm": "Lemongrass Basil Chicken",
+      "note": "Certified GF · confirm DF",
+      "q": "Saffron Road Lemongrass Basil Chicken"
+    },
+    "smoroc": {
+      "brand": "Saffron Road",
+      "nm": "Moroccan-Style Chicken",
+      "note": "Certified GF · confirm DF",
+      "q": "Saffron Road Moroccan Chicken"
+    },
+    "hckorean": {
+      "brand": "Healthy Choice Power Bowls",
+      "nm": "Korean-Inspired Beef Bowl",
+      "note": "GF + DF · verify label",
+      "q": "Healthy Choice Power Bowl Korean Beef"
+    },
+    "hccuban": {
+      "brand": "Healthy Choice Power Bowls",
+      "nm": "Cuban-Inspired Pork Bowl",
+      "note": "GF + DF · verify label",
+      "q": "Healthy Choice Power Bowl Cuban Pork"
+    },
+    "amychili": {
+      "brand": "Amy's",
+      "nm": "Black Bean Chili",
+      "note": "GF + DF (dairy-free SKU)",
+      "q": "Amys Black Bean Chili gluten free"
+    },
+    "amythai": {
+      "brand": "Amy's",
+      "nm": "Thai Coconut Curry Bowl",
+      "note": "GF + DF · coconut-based",
+      "q": "Amys Thai Coconut Curry Bowl gluten free"
+    },
+    "rx": {
+      "brand": "RXBAR",
+      "nm": "Protein Bar",
+      "note": "GF + DF · ~12g protein",
+      "q": "RXBAR",
+      "cal": 210,
+      "p": 12,
+      "c": 24,
+      "f": 9,
+      "planDesc": "any flavor"
+    },
+    "chomps": {
+      "brand": "Chomps",
+      "nm": "Meat Sticks",
+      "note": "GF + DF · protein",
+      "q": "Chomps meat sticks",
+      "cal": 200,
+      "p": 18,
+      "c": 1,
+      "f": 14,
+      "planDesc": "2 sticks, beef or turkey"
+    },
+    "bada": {
+      "brand": "Bada Bean Bada Boom",
+      "nm": "Roasted Broad Beans",
+      "note": "GF + DF · crunchy protein",
+      "q": "Bada Bean Bada Boom broad beans",
+      "cal": 200,
+      "p": 12,
+      "c": 24,
+      "f": 6,
+      "planDesc": "1 bag"
+    },
+    "trail": {
+      "brand": "",
+      "nm": "Trail Mix (GF/DF)",
+      "note": "GF + DF",
+      "q": "trail mix nuts dried fruit",
+      "cal": 250,
+      "p": 7,
+      "c": 18,
+      "f": 18,
+      "planDesc": "¼ cup nuts + dried fruit"
+    },
+    "go": {
+      "brand": "GoMacro",
+      "nm": "MacroBar",
+      "note": "GF + DF · plant protein",
+      "q": "GoMacro MacroBar"
+    },
+    "ejcook": {
+      "brand": "Enjoy Life",
+      "nm": "Soft-Baked Cookies",
+      "note": "Allergen-free: GF + DF",
+      "q": "Enjoy Life soft baked cookies"
+    },
+    "ejbite": {
+      "brand": "Enjoy Life",
+      "nm": "Protein Bites",
+      "note": "GF + DF",
+      "q": "Enjoy Life protein bites"
+    },
+    "skinny": {
+      "brand": "SkinnyPop",
+      "nm": "Popcorn",
+      "note": "GF + DF",
+      "q": "SkinnyPop popcorn"
+    },
+    "lara": {
+      "brand": "LÄRABAR",
+      "nm": "Fruit & Nut Bar",
+      "note": "GF + DF · whole-food",
+      "q": "Larabar"
+    },
+    "thats": {
+      "brand": "That's It",
+      "nm": "Fruit Bars",
+      "note": "GF + DF · 2 ingredients",
+      "q": "Thats It fruit bars"
+    },
+    "marys": {
+      "brand": "Mary's Gone Crackers",
+      "nm": "Seed Crackers",
+      "note": "GF + DF",
+      "q": "Marys Gone Crackers"
+    },
+    "hippeas": {
+      "brand": "Hippeas",
+      "nm": "Chickpea Puffs",
+      "note": "GF + DF",
+      "q": "Hippeas chickpea puffs"
+    },
+    "jerky": {
+      "brand": "Country Archer",
+      "nm": "Beef Jerky",
+      "note": "GF + DF · protein",
+      "q": "Country Archer beef jerky"
+    },
+    "biena": {
+      "brand": "Biena",
+      "nm": "Roasted Chickpea Snacks",
+      "note": "GF + DF",
+      "q": "Biena roasted chickpeas"
+    },
+    "madegood": {
+      "brand": "MadeGood",
+      "nm": "Granola Minis",
+      "note": "GF + DF · allergen-friendly",
+      "q": "MadeGood granola minis"
+    },
+    "simple": {
+      "brand": "Simple Mills",
+      "nm": "Almond Flour Crackers",
+      "note": "GF · most DF, check flavor",
+      "q": "Simple Mills almond flour crackers"
+    },
+    "dang": {
+      "brand": "Dang",
+      "nm": "Coconut / Rice Chips",
+      "note": "GF + DF",
+      "q": "Dang coconut chips"
+    }
+  },
+  "meals": {
+    "bOatsON": {
+      "slot": "Breakfast",
+      "nm": "Overnight Protein Oats",
+      "appliance": "No-cook",
+      "active": 3,
+      "desc": "GF oats · 2 scoops protein · coconut milk · chia — soaked overnight, grab in AM",
+      "cal": 700,
+      "p": 55,
+      "c": 88,
+      "f": 16
+    },
+    "bSmoothie": {
+      "slot": "Breakfast",
+      "nm": "Power Smoothie",
+      "appliance": "Blender",
+      "active": 4,
+      "desc": "frozen fruit · coconut milk · 2 scoops protein · ½ cup GF oats · almond butter",
+      "cal": 720,
+      "p": 62,
+      "c": 70,
+      "f": 20
+    },
+    "bEggsBatch": {
+      "slot": "Breakfast",
+      "nm": "Batch Eggs + Shake",
+      "appliance": "No-cook",
+      "active": 3,
+      "desc": "3 pre-boiled eggs · protein shake · banana · 1 tbsp almond butter",
+      "cal": 620,
+      "p": 52,
+      "c": 52,
+      "f": 22
+    },
+    "lEntree": {
+      "slot": "Lunch",
+      "nm": "Reheat Entrée + Rice",
+      "appliance": "Microwave",
+      "active": 3,
+      "desc": "Kevin's/Amy's GF-DF entrée · batched rice · bagged greens",
+      "cal": 620,
+      "p": 46,
+      "c": 72,
+      "f": 14
+    },
+    "lChicken": {
+      "slot": "Lunch",
+      "nm": "Batch Chicken Rice Bowl",
+      "appliance": "Assemble",
+      "active": 4,
+      "desc": "shredded crockpot chicken · batched rice · veg · coconut aminos",
+      "cal": 680,
+      "p": 52,
+      "c": 70,
+      "f": 14
+    },
+    "lChili": {
+      "slot": "Lunch",
+      "nm": "Turkey Chili Bowl",
+      "appliance": "Microwave",
+      "active": 3,
+      "desc": "batched crockpot turkey chili · batched rice",
+      "cal": 680,
+      "p": 45,
+      "c": 72,
+      "f": 18
+    },
+    "dChickenSP": {
+      "slot": "Dinner",
+      "nm": "Chicken + Air-Fryer Sweet Potato",
+      "appliance": "Air fryer",
+      "active": 5,
+      "desc": "shredded chicken · air-fried sweet potato · frozen veg",
+      "cal": 740,
+      "p": 50,
+      "c": 66,
+      "f": 24
+    },
+    "dChiliPotato": {
+      "slot": "Dinner",
+      "nm": "Chili over Air-Fryer Potato",
+      "appliance": "Air fryer",
+      "active": 5,
+      "desc": "turkey chili · air-fried potato cubes",
+      "cal": 720,
+      "p": 44,
+      "c": 70,
+      "f": 24
+    },
+    "dBurrito": {
+      "slot": "Dinner",
+      "nm": "Chicken Burrito Bowl",
+      "appliance": "No-cook",
+      "active": 5,
+      "desc": "chicken · rice · corn · avocado · salsa — all assemble",
+      "cal": 760,
+      "p": 46,
+      "c": 74,
+      "f": 30
+    },
+    "dChickenVeg": {
+      "slot": "Dinner",
+      "nm": "Chicken, Rice & Air-Fryer Veg",
+      "appliance": "Air fryer",
+      "active": 5,
+      "desc": "chicken · batched rice · air-fried frozen veg · coconut aminos",
+      "cal": 720,
+      "p": 50,
+      "c": 72,
+      "f": 20
+    },
+    "dChiliRice": {
+      "slot": "Dinner",
+      "nm": "Turkey Chili Rice Bowl",
+      "appliance": "Microwave",
+      "active": 3,
+      "desc": "batched chili · batched rice",
+      "cal": 700,
+      "p": 44,
+      "c": 76,
+      "f": 18
+    },
+    "dSalmon": {
+      "slot": "Dinner",
+      "nm": "Air-Fryer Salmon + Rice + Asparagus",
+      "appliance": "Air fryer",
+      "active": 8,
+      "desc": "salmon (10 min air fryer) · batched rice · asparagus",
+      "cal": 740,
+      "p": 46,
+      "c": 58,
+      "f": 34
+    },
+    "dTeriyaki": {
+      "slot": "Dinner",
+      "nm": "Teriyaki Air-Fryer Salmon Bowl",
+      "appliance": "Air fryer",
+      "active": 8,
+      "desc": "salmon · coconut-aminos teriyaki · quinoa · veg",
+      "cal": 720,
+      "p": 45,
+      "c": 64,
+      "f": 30
+    },
+    "snShake": {
+      "slot": "Snack",
+      "nm": "Protein Shake",
+      "appliance": "Blend",
+      "active": 2,
+      "desc": "1 scoop pea/rice protein · coconut milk",
+      "cal": 200,
+      "p": 30,
+      "c": 10,
+      "f": 4
+    },
+    "snRice": {
+      "slot": "Snack",
+      "nm": "Rice Cakes + Almond Butter",
+      "appliance": "No-cook",
+      "active": 1,
+      "desc": "2 cakes · 1 tbsp almond butter",
+      "cal": 240,
+      "p": 7,
+      "c": 26,
+      "f": 14
+    },
+    "snBanana": {
+      "slot": "Snack",
+      "nm": "Banana + Almond Butter",
+      "appliance": "No-cook",
+      "active": 1,
+      "desc": "1 banana · 1 tbsp almond butter",
+      "cal": 230,
+      "p": 6,
+      "c": 32,
+      "f": 9
+    },
+    "snJerky": {
+      "slot": "Snack",
+      "nm": "Jerky + Fruit",
+      "appliance": "No-cook",
+      "active": 1,
+      "desc": "1 oz jerky · 1 apple",
+      "cal": 200,
+      "p": 11,
+      "c": 28,
+      "f": 2
+    }
+  },
+  "batch": {
+    "A": {
+      "active": "~25 min hands-on",
+      "steps": [
+        [
+          "Crockpot",
+          "3 lb chicken thighs + coconut aminos · LOW 6–7 hr · shred — base protein all week"
+        ],
+        [
+          "Crockpot / Instant Pot",
+          "Turkey chili — dump everything, LOW 6 hr (or IP 35 min)"
+        ],
+        [
+          "Instant Pot",
+          "Big batch rice or quinoa (10 min) + 1 dozen eggs (5-5-5, hands-off)"
+        ],
+        [
+          "Air fryer",
+          "Tray of sweet potato + potato cubes; bag of frozen veg"
+        ],
+        [
+          "Portion",
+          "Chicken + grain into containers — done for the week"
+        ]
+      ]
+    },
+    "B": {
+      "active": "~20 min hands-on",
+      "steps": [
+        [
+          "Crockpot",
+          "3 lb chicken thighs + coconut aminos · LOW 6–7 hr · shred — base protein"
+        ],
+        [
+          "Instant Pot",
+          "Big batch rice + quinoa (10 min) + 1 dozen eggs (5-5-5)"
+        ],
+        [
+          "Air fryer",
+          "Tray of potato / sweet potato cubes; bag of frozen veg"
+        ],
+        [
+          "Fridge",
+          "Salmon stays raw — air-fry fresh on dinner nights (10 min, it's the one thing that's bad reheated)"
+        ],
+        [
+          "Portion",
+          "Chicken + grain into containers"
+        ]
+      ]
+    }
+  },
+  "rotation": [
+    {
+      "entrees": [
+        "klime",
+        "ksich",
+        "sthai",
+        "hckorean",
+        "amychili"
+      ],
+      "snacks": [
+        "rx",
+        "ejcook",
+        "skinny",
+        "chomps",
+        "hippeas",
+        "thats"
+      ]
+    },
+    {
+      "entrees": [
+        "klemon",
+        "kkorean",
+        "smoroc",
+        "hccuban",
+        "amythai"
+      ],
+      "snacks": [
+        "go",
+        "ejbite",
+        "lara",
+        "jerky",
+        "bada",
+        "marys"
+      ]
+    },
+    {
+      "entrees": [
+        "kroast",
+        "kbeef",
+        "slemon",
+        "hckorean",
+        "sthai"
+      ],
+      "snacks": [
+        "rx",
+        "madegood",
+        "dang",
+        "chomps",
+        "biena",
+        "skinny"
+      ]
+    },
+    {
+      "entrees": [
+        "klime",
+        "kkorean",
+        "smoroc",
+        "hccuban",
+        "amychili"
+      ],
+      "snacks": [
+        "go",
+        "simple",
+        "thats",
+        "jerky",
+        "hippeas",
+        "lara"
+      ]
+    },
+    {
+      "entrees": [
+        "ksich",
+        "klemon",
+        "sthai",
+        "hccuban",
+        "amythai"
+      ],
+      "snacks": [
+        "ejcook",
+        "bada",
+        "dang",
+        "chomps",
+        "biena",
+        "marys"
+      ]
+    },
+    {
+      "entrees": [
+        "kroast",
+        "kkorean",
+        "smoroc",
+        "hckorean",
+        "amychili"
+      ],
+      "snacks": [
+        "go",
+        "madegood",
+        "skinny",
+        "jerky",
+        "hippeas",
+        "simple"
+      ]
+    }
+  ],
+  "plan": {
+    "A": [
+      [
+        "bSmoothie",
+        "lEntree",
+        "rx",
+        "dChickenSP",
+        "chomps"
+      ],
+      [
+        "bOatsON",
+        "lChicken",
+        "snShake",
+        "dChiliPotato",
+        "snBanana"
+      ],
+      [
+        "bEggsBatch",
+        "lChili",
+        "chomps",
+        "dBurrito",
+        "trail"
+      ],
+      [
+        "bSmoothie",
+        "lEntree",
+        "rx",
+        "dChickenVeg",
+        "bada"
+      ],
+      [
+        "bOatsON",
+        "lChicken",
+        "snShake",
+        "dChiliRice",
+        "snRice"
+      ],
+      [
+        "bEggsBatch",
+        "lChili",
+        "snJerky",
+        "dChickenSP",
+        "chomps"
+      ],
+      [
+        "bSmoothie",
+        "lEntree",
+        "rx",
+        "dBurrito",
+        "snBanana"
+      ]
+    ],
+    "B": [
+      [
+        "bSmoothie",
+        "lEntree",
+        "rx",
+        "dSalmon",
+        "chomps"
+      ],
+      [
+        "bOatsON",
+        "lChicken",
+        "snShake",
+        "dChickenSP",
+        "snBanana"
+      ],
+      [
+        "bEggsBatch",
+        "lEntree",
+        "chomps",
+        "dTeriyaki",
+        "trail"
+      ],
+      [
+        "bSmoothie",
+        "lChicken",
+        "rx",
+        "dSalmon",
+        "bada"
+      ],
+      [
+        "bOatsON",
+        "lEntree",
+        "snShake",
+        "dChickenVeg",
+        "snRice"
+      ],
+      [
+        "bEggsBatch",
+        "lChicken",
+        "snJerky",
+        "dTeriyaki",
+        "chomps"
+      ],
+      [
+        "bSmoothie",
+        "lEntree",
+        "rx",
+        "dChickenSP",
+        "snBanana"
+      ]
+    ]
+  },
+  "shop": {
+    "A": {
+      "cats": [
+        {
+          "name": "Produce",
+          "ico": "🥬",
+          "items": [
+            {
+              "nm": "Bananas",
+              "qty": "1 small bunch",
+              "q": "bananas"
+            },
+            {
+              "nm": "Avocados",
+              "qty": "3",
+              "q": "avocado"
+            },
+            {
+              "nm": "Broccoli",
+              "qty": "2 crowns",
+              "q": "broccoli crown"
+            },
+            {
+              "nm": "Mixed stir-fry vegetables",
+              "qty": "1 bag",
+              "q": "stir fry vegetables"
+            },
+            {
+              "nm": "Baby spinach",
+              "qty": "1 bag",
+              "q": "baby spinach"
+            },
+            {
+              "nm": "Sweet potatoes",
+              "qty": "4–5",
+              "q": "sweet potato"
+            },
+            {
+              "nm": "Yellow potatoes",
+              "qty": "1 small bag",
+              "q": "yellow potatoes"
+            },
+            {
+              "nm": "Berries",
+              "qty": "1 container",
+              "q": "blueberries"
+            },
+            {
+              "nm": "Apples",
+              "qty": "2",
+              "q": "apples"
+            }
+          ]
+        },
+        {
+          "name": "Meat & Seafood",
+          "ico": "🍗",
+          "items": [
+            {
+              "nm": "Ground turkey 93/7",
+              "qty": "4 lb",
+              "q": "ground turkey 93/7"
+            },
+            {
+              "nm": "Turkey breakfast sausage (GF)",
+              "qty": "1 pack",
+              "q": "gluten free turkey breakfast sausage"
+            },
+            {
+              "nm": "Chicken breast",
+              "qty": "1 lb",
+              "q": "boneless skinless chicken breast"
+            }
+          ]
+        },
+        {
+          "name": "Frozen & Ready-Made",
+          "ico": "❄️",
+          "items": [
+            {
+              "nm": "Kevin's GF/DF chicken entrées",
+              "qty": "2",
+              "q": "Kevins Natural Foods chicken entree"
+            },
+            {
+              "nm": "Amy's GF/DF bowls (dairy-free)",
+              "qty": "2",
+              "q": "Amys gluten free dairy free bowl"
+            },
+            {
+              "nm": "Frozen fruit (smoothies)",
+              "qty": "1–2 bags",
+              "q": "frozen mixed fruit"
+            }
+          ]
+        },
+        {
+          "name": "Refrigerated",
+          "ico": "🥚",
+          "items": [
+            {
+              "nm": "Eggs",
+              "qty": "1 dozen",
+              "q": "eggs large"
+            },
+            {
+              "nm": "Coconut milk (carton, unsweetened)",
+              "qty": "2 cartons",
+              "q": "unsweetened coconut milk carton"
+            }
+          ]
+        },
+        {
+          "name": "Pantry & Dry",
+          "ico": "🌾",
+          "items": [
+            {
+              "nm": "GF rolled oats",
+              "qty": "1 container",
+              "q": "gluten free rolled oats"
+            },
+            {
+              "nm": "White or brown rice",
+              "qty": "1 bag",
+              "q": "long grain rice"
+            },
+            {
+              "nm": "Pea/rice protein powder",
+              "qty": "1 tub",
+              "q": "pea protein powder unflavored"
+            },
+            {
+              "nm": "Almond butter",
+              "qty": "1 jar",
+              "q": "almond butter"
+            },
+            {
+              "nm": "Corn tortillas",
+              "qty": "1 pack",
+              "q": "corn tortillas"
+            },
+            {
+              "nm": "Salsa",
+              "qty": "1 jar",
+              "q": "salsa"
+            }
+          ]
+        },
+        {
+          "name": "Snacks",
+          "ico": "🥨",
+          "items": [
+            {
+              "ref": "rx",
+              "qty": "1 box"
+            },
+            {
+              "ref": "chomps",
+              "qty": "1 pack"
+            },
+            {
+              "nm": "Rice cakes",
+              "qty": "1 bag",
+              "q": "rice cakes"
+            },
+            {
+              "ref": "trail",
+              "qty": "1 bag"
+            },
+            {
+              "ref": "bada",
+              "qty": "1 bag"
+            },
+            {
+              "ref": "jerky",
+              "qty": "1 bag"
+            }
+          ]
+        }
+      ]
+    },
+    "B": {
+      "cats": [
+        {
+          "name": "Produce",
+          "ico": "🥬",
+          "items": [
+            {
+              "nm": "Bananas",
+              "qty": "1 small bunch",
+              "q": "bananas"
+            },
+            {
+              "nm": "Avocados",
+              "qty": "2",
+              "q": "avocado"
+            },
+            {
+              "nm": "Asparagus",
+              "qty": "2 bunches",
+              "q": "asparagus"
+            },
+            {
+              "nm": "Mixed vegetables / greens",
+              "qty": "1–2 bags",
+              "q": "mixed vegetables"
+            },
+            {
+              "nm": "Baby spinach",
+              "qty": "1 bag",
+              "q": "baby spinach"
+            },
+            {
+              "nm": "Yellow potatoes",
+              "qty": "1 bag",
+              "q": "yellow potatoes"
+            },
+            {
+              "nm": "Lemons",
+              "qty": "2",
+              "q": "lemons"
+            },
+            {
+              "nm": "Berries",
+              "qty": "1 container",
+              "q": "blueberries"
+            },
+            {
+              "nm": "Apples",
+              "qty": "2",
+              "q": "apples"
+            }
+          ]
+        },
+        {
+          "name": "Meat & Seafood",
+          "ico": "🐟",
+          "items": [
+            {
+              "nm": "Frozen salmon fillets",
+              "qty": "≈2.5 lb",
+              "q": "frozen salmon fillets"
+            },
+            {
+              "nm": "Chicken thighs (boneless)",
+              "qty": "2 lb",
+              "q": "boneless skinless chicken thighs"
+            },
+            {
+              "nm": "Chicken breast",
+              "qty": "1 lb",
+              "q": "boneless skinless chicken breast"
+            },
+            {
+              "nm": "Turkey breakfast sausage (GF)",
+              "qty": "1 pack",
+              "q": "gluten free turkey breakfast sausage"
+            }
+          ]
+        },
+        {
+          "name": "Frozen & Ready-Made",
+          "ico": "❄️",
+          "items": [
+            {
+              "nm": "Kevin's GF/DF chicken entrées",
+              "qty": "3",
+              "q": "Kevins Natural Foods chicken entree"
+            },
+            {
+              "nm": "Amy's GF/DF bowl (dairy-free)",
+              "qty": "1",
+              "q": "Amys gluten free dairy free bowl"
+            },
+            {
+              "nm": "Frozen fruit (smoothies)",
+              "qty": "1–2 bags",
+              "q": "frozen mixed fruit"
+            }
+          ]
+        },
+        {
+          "name": "Refrigerated",
+          "ico": "🥚",
+          "items": [
+            {
+              "nm": "Eggs",
+              "qty": "1 dozen",
+              "q": "eggs large"
+            },
+            {
+              "nm": "Coconut milk (carton, unsweetened)",
+              "qty": "2 cartons",
+              "q": "unsweetened coconut milk carton"
+            }
+          ]
+        },
+        {
+          "name": "Pantry & Dry",
+          "ico": "🌾",
+          "items": [
+            {
+              "nm": "GF rolled oats",
+              "qty": "1 container",
+              "q": "gluten free rolled oats"
+            },
+            {
+              "nm": "White or brown rice",
+              "qty": "1 bag",
+              "q": "long grain rice"
+            },
+            {
+              "nm": "Quinoa",
+              "qty": "1 bag",
+              "q": "quinoa"
+            },
+            {
+              "nm": "Pea/rice protein powder",
+              "qty": "1 tub",
+              "q": "pea protein powder unflavored"
+            },
+            {
+              "nm": "Almond butter",
+              "qty": "1 jar",
+              "q": "almond butter"
+            }
+          ]
+        },
+        {
+          "name": "Snacks",
+          "ico": "🥨",
+          "items": [
+            {
+              "ref": "rx",
+              "qty": "1 box"
+            },
+            {
+              "ref": "chomps",
+              "qty": "1 pack"
+            },
+            {
+              "nm": "Rice cakes",
+              "qty": "1 bag",
+              "q": "rice cakes"
+            },
+            {
+              "ref": "trail",
+              "qty": "1 bag"
+            },
+            {
+              "ref": "bada",
+              "qty": "1 bag"
+            },
+            {
+              "ref": "jerky",
+              "qty": "1 bag"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

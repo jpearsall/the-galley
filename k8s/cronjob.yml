@@ -1,0 +1,62 @@
+# Kubernetes equivalent of the GitHub Actions workflow, for the case where you
+# already run a cluster. Heavier than Actions for one weekly job (you own the
+# image, secret rotation, and a way to publish the output) — included because
+# you asked. It writes the refreshed file to a PVC; point your static host /
+# nginx sidecar at that volume, or swap the publish step for an `aws s3 cp` /
+# `gsutil cp` to your bucket.
+#
+# Prereqs:
+#   kubectl create secret generic galley-secrets \
+#     --from-literal=ANTHROPIC_API_KEY=sk-ant-...
+#   A container image that has python + the repo (see Dockerfile in README).
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: galley-data
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 64Mi
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: refresh-galley-data
+spec:
+  schedule: "0 14 * * 0"          # Sunday 14:00 UTC
+  concurrencyPolicy: Forbid       # never overlap runs
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      activeDeadlineSeconds: 600
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: generate
+              image: ghcr.io/YOU/galley-pipeline:latest   # build from the Dockerfile in README
+              command: ["python", "scripts/generate.py"]
+              env:
+                - name: ANTHROPIC_API_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: galley-secrets
+                      key: ANTHROPIC_API_KEY
+                - name: GALLEY_MODEL
+                  value: claude-sonnet-4-6
+                - name: GALLEY_DATA
+                  value: /data/galley-data.json
+              volumeMounts:
+                - name: data
+                  mountPath: /data
+              resources:
+                requests: { cpu: "100m", memory: "128Mi" }
+                limits:   { cpu: "500m", memory: "256Mi" }
+          volumes:
+            - name: data
+              persistentVolumeClaim:
+                claimName: galley-data

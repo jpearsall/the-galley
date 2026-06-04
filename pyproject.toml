@@ -1,0 +1,9 @@
+[project]
+name = "galley-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=0.40",
+    "jsonschema>=4.0",
+]

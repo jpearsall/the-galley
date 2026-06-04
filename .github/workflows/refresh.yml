@@ -1,0 +1,40 @@
+name: refresh-galley-data
+
+on:
+  schedule:
+    - cron: "0 14 * * 0"   # every Sunday 14:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync --frozen --no-dev
+
+      - name: Refresh data file (validates; no-ops on failure)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GALLEY_MODEL: claude-sonnet-4-6
+        run: uv run python scripts/generate.py
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain data/galley-data.json)" ]]; then
+            git config user.name  "galley-bot"
+            git config user.email "galley-bot@users.noreply.github.com"
+            git add data/galley-data.json
+            git commit -m "chore: weekly galley data refresh ($(date -u +%F))"
+            git push
+          else
+            echo "no changes to commit"
+          fi
