@@ -341,7 +341,7 @@ function oRow(id){
   li.innerHTML=`${checkbox(on)}
     <div class="meta">${it.brand?`<span class="brand">${it.brand}</span>`:''}<span class="nm">${it.nm}</span><div class="note">${it.note}</div></div>
     <div class="links"><a href="${walmart(it.q)}" target="_blank" rel="noopener">Walmart ↗</a><a class="ic" href="${instacart(it.q)}" target="_blank" rel="noopener">Instacart ↗</a></div>`;
-  li.querySelector('.box').onclick=async()=>{if(oChecks.includes)oChecks=oChecks.filter(x=>x!==id);else oChecks.push(id);li.classList.toggle('checked');li.querySelector('.box').classList.toggle('on');await oSaveChecks(oView,oChecks);oProgress();};
+  li.querySelector('.box').onclick=async()=>{if(oChecks.includes(id))oChecks=oChecks.filter(x=>x!==id);else oChecks.push(id);li.classList.toggle('checked');li.querySelector('.box').classList.toggle('on');await oSaveChecks(oView,oChecks);oProgress();};
   return li;
 }
 function oProgress(){const wk=ROTATION[oView];const tot=wk.entrees.length+wk.snacks.length;document.getElementById('o_bar').style.width=(oChecks.length/tot*100)+'%';document.getElementById('o_ptxt').textContent=oChecks.length+" of "+tot+" in the cart";}
@@ -362,7 +362,7 @@ function oBuildMap(){
     const now=i===oLive;const card=document.createElement('div');card.className='wcard'+(now?' now':'');
     const ent=wk.entrees.map(id=>CATALOG[id].brand.split(' ')[0]+" "+CATALOG[id].nm).join(' · ');
     const sn=wk.snacks.map(id=>CATALOG[id].brand||CATALOG[id].nm).join(' · ');
-    card.innerHTML=`<h3>Week ${i+1${now?'<span class="tag">This week</span>':''}</h3><div class="cb"><div class="grp">Entrées</div><p>${ent}</p><div class="grp">Snacks</div><p>${sn}</p></div>`;
+    card.innerHTML=`<h3>Week ${i+1}${now?'<span class="tag">This week</span>':''}</h3><div class="cb"><div class="grp">Entrées</div><p>${ent}</p><div class="grp">Snacks</div><p>${sn}</p></div>`;
     p.appendChild(card);
   });
 }
@@ -440,7 +440,7 @@ const HSUB={order:"Ready-made entrées & snacks, on a rolling weekly loop.",eat:
 document.querySelectorAll('.topnav button').forEach(b=>{b.onclick=()=>{
   document.querySelectorAll('.topnav button').forEach(x=>x.classList.remove('active'));
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
-  b.classLd('active');document.getElementById('view-'+b.dataset.view).classList.add('active');
+  b.classList.add('active');document.getElementById('view-'+b.dataset.view).classList.add('active');
   document.getElementById('hsub').textContent=HSUB[b.dataset.view];
 };});
 
