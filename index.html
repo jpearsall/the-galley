@@ -29,7 +29,9 @@
   body{font-family:'Hanken Grotesk',sans-serif;background:var(--forest-deep);color:var(--ink);line-height:1.45;}
   .wrap{max-width:640px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 80px rgba(0,0,0,.4);overflow:hidden;}
 
-  header{background:var(--forest);color:var(--on-forest);padding:24px 22px 18px;position:relative;overflow:hidden;}
+  header{background:var(--forest);color:var(--on-forest);padding:24px 22px 18px;position:relative;overflow:hidden;display:flex;align-items:center;gap:18px;}
+  .header-anchor{font-size:44px;line-height:1;flex-shrink:0;}
+  .header-text{display:flex;flex-direction:column;}
   header::after{content:"";position:absolute;right:-40px;top:-50px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,var(--amber) 0%,transparent 70%);opacity:.35;}
   .kicker{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:5px;}
   h1{font-family:'Fraunces',serif;font-weight:900;font-size:34px;line-height:.95;letter-spacing:-.02em;}
@@ -210,9 +212,12 @@
 <div class="wrap">
   <header>
     <button class="themebtn" id="themeBtn"><span class="ic">🌗</span><span id="themeLabel">Auto</span></button>
-    <div class="kicker">Gluten-Free · Dairy-Free</div>
-    <h1>The <em>Galley</em></h1>
-    <div class="hsub" id="hsub">Order ready-made, eat to your macros, shop the week.</div>
+    <div class="header-anchor">⚓</div>
+    <div class="header-text">
+      <div class="kicker">Gluten-Free · Dairy-Free</div>
+      <h1>The <em>Galley</em></h1>
+      <div class="hsub" id="hsub">Order ready-made, eat to your macros, shop the week.</div>
+    </div>
   </header>
 
   <nav class="topnav">
