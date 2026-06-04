@@ -322,13 +322,13 @@ function slotData(id){
   return {slot:"Snack",nm:cName(id),appliance:"No-cook",active:1,desc:c.planDesc||c.note,cal:c.cal,p:c.p,c:c.c,f:c.f};
 }
 
-function isoWeek(d){d=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));const n=(d.getUTCDay()+6)%7;d.setUTCDa(d.getUTCDate()-n+3);const ft=d.getTime();d.setUTCMonth(0,1);if(d.getUTCDay()!==4){d.setUTCMonth(0,1+((4-d.getUTCDay())+7)%7);}return 1+Math.ceil((ft-d)/604800000);}
+function isoWeek(d){d=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));const n=(d.getUTCDay()+6)%7;d.setUTCDate(d.getUTCDate()-n+3);const ft=d.getTime();d.setUTCMonth(0,1);if(d.getUTCDay()!==4){d.setUTCMonth(0,1+((4-d.getUTCDay())+7)%7);}return 1+Math.ceil((ft-d)/604800000);}
 function weekRange(d){const day=(d.getDay()+6)%7;const m=new Date(d);m.setDate(d.getDate()-day);const s=new Date(m);s.setDate(m.getDate()+6);const f=x=>x.toLocaleDateString('en-US',{month:'short',day:'numeric'});return f(m)+" – "+f(s);}
-function sundayRange(){const now=new Date();const st=new Date(now);st.setDate(now.getDate()-now.getDay());cst en=new Date(st);en.setDate(st.getDate()+7);const f=x=>x.toLocaleDateString('en-US',{month:'short',day:'numeric'});return f(st)+" – "+f(en);}
+function sundayRange(){const now=new Date();const st=new Date(now);st.setDate(now.getDate()-now.getDay());const en=new Date(st);en.setDate(st.getDate()+7);const f=x=>x.toLocaleDateString('en-US',{month:'short',day:'numeric'});return f(st)+" – "+f(en);}
 function planParity(){return (isoWeek(new Date())%2===0)?'A':'B';}
 async function sget(k){return localStorage.getItem('galley:'+k);}
 async function sset(k,v){localStorage.setItem('galley:'+k,v);}
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=.classList.remove('show'),1900);}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1900);}
 function checkbox(on){return `<div class="box ${on?'on':''}"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>`;}
 
 /* ================= ORDER (rotation) ================= */
@@ -367,7 +367,7 @@ function oBuildMap(){
   });
 }
 function oCopy(){const wk=ROTATION[oView];let t="GF/DF Order — Week "+(oView+1)+"\n\nENTRÉES\n";wk.entrees.forEach(id=>t+="• "+cName(id)+"\n");t+="\nSNACKS\n";wk.snacks.forEach(id=>t+="• "+cName(id)+"\n");navigator.clipboard.writeText(t).then(()=>toast("Order list copied ✓"));}
-async function oSetMode(n){oMoent.getElementById('o_m4').classList.toggle('active',n===4);document.getElementById('o_m6').classList.toggle('active',n===6);await sset('mode',String(n));oLive=(isoWeek(new Date())-1)%oMode;oView=oLive;oRender();if(document.getElementById('o_map').classList.contains('active'))oBuildMap();}
+async function oSetMode(n){document.getElementById('o_m4').classList.toggle('active',n===4);document.getElementById('o_m6').classList.toggle('active',n===6);await sset('mode',String(n));oLive=(isoWeek(new Date())-1)%oMode;oView=oLive;oRender();if(document.getElementById('o_map').classList.contains('active'))oBuildMap();}
 document.getElementById('o_prev').onclick=()=>{oView=(oView+oMode-1)%oMode;oRender();};
 document.getElementById('o_next').onclick=()=>{oView=(oView+1)%oMode;oRender();};
 document.getElementById('o_today').onclick=()=>{oView=oLive;oRender();};
@@ -392,24 +392,24 @@ function eEatenMacros(){return PLAN[eWeek][eDay].reduce((a,id,i)=>{if(eEaten.inc
 function eRenderDays(){const s=document.getElementById('e_dayStrip');s.innerHTML='';DAYS.forEach((d,i)=>{const b=document.createElement('button');b.textContent=d;b.className=(i===eDay?'active ':'')+(i===eToday?'today':'');b.onclick=async()=>{eDay=i;eEaten=await eGet();eRender();};s.appendChild(b);});}
 function eRenderTotals(){const t=eDayMacros(),e=eEatenMacros();const inb=t.cal>=CAL_LO&&t.cal<=CAL_HI&&t.p>=P_LO&&t.p<=P_HI;document.getElementById('e_totals').innerHTML=`${inb?'<div class="inband">In range ✓</div>':''}
   <div class="row"><div class="big">⏱ ${eDayActive()} min hands-on today</div><div class="band">off the Sunday batch</div></div>
-  <div class="row" stylergin-top:8px"><div class="big">Calories</div><div class="band">eaten ${e.cal} / plan ${t.cal} kcal</div></div><div class="tbar cal"><span style="width:${Math.min(100,e.cal/t.cal*100)}%"></span></div>
+  <div class="row" style="margin-top:8px"><div class="big">Calories</div><div class="band">eaten ${e.cal} / plan ${t.cal} kcal</div></div><div class="tbar cal"><span style="width:${Math.min(100,e.cal/t.cal*100)}%"></span></div>
   <div class="row"><div class="big">Protein</div><div class="band">eaten ${e.p} / plan ${t.p} g</div></div><div class="tbar prot"><span style="width:${Math.min(100,e.p/t.p*100)}%"></span></div>
   <div class="macroline"><span><b>${t.c}g</b> carbs</span><span><b>${t.f}g</b> fat</span><span style="color:#b9c2aa">~${CAL_LO}–${CAL_HI} · ${P_LO}–${P_HI}g P</span></div>`;}
 function eRenderMeals(){const wrap=document.getElementById('e_meals');wrap.innerHTML='';PLAN[eWeek][eDay].forEach((id,i)=>{const m=slotData(id),on=eEaten.includes(i);const d=document.createElement('div');d.className='meal'+(on?' eaten':'');d.innerHTML=`<div class="mhead">${checkbox(on)}<div class="mmeta"><div class="slot">${m.slot}</div><div class="mnm">${m.nm}</div><div class="mdesc">${m.desc}</div></div></div>
   <div class="chips"><span class="app">${m.appliance} · ${m.active}m</span><span class="chip cal">${m.cal} kcal</span><span class="chip p">${m.p}g protein</span><span class="chip">${m.c}g C</span><span class="chip">${m.f}g F</span></div>`;d.querySelector('.box').onclick=async()=>{if(eEaten.includes(i))eEaten=eEaten.filter(x=>x!==i);else eEaten.push(i);await eSave();eRender();};wrap.appendChild(d);});}
-function eRenderBatch(){const b=BATCH[eWeek];const el=document.getElementById('e_batch');const open=el.classList.contains('open');el.innerHTL=`<h3 id="e_batchH"><span><span class="caret">▸</span> Batch Day · Sunday</span><span class="min">${b.active}</span></h3><div class="bsteps">${b.steps.map(s=>`<div class="bstep"><div class="app">${s[0]}</div><div class="bd">${s[1]}</div></div>`).join('')}</div>`;if(open)el.classList.add('open');document.getElementById('e_batchH').onclick=()=>el.classList.toggle('open');}
+function eRenderBatch(){const b=BATCH[eWeek];const el=document.getElementById('e_batch');const open=el.classList.contains('open');el.innerHTML=`<h3 id="e_batchH"><span><span class="caret">▸</span> Batch Day · Sunday</span><span class="min">${b.active}</span></h3><div class="bsteps">${b.steps.map(s=>`<div class="bstep"><div class="app">${s[0]}</div><div class="bd">${s[1]}</div></div>`).join('')}</div>`;if(open)el.classList.add('open');document.getElementById('e_batchH').onclick=()=>el.classList.toggle('open');}
 function eRender(){eRenderDays();eRenderBatch();eRenderTotals();eRenderMeals();}
-async function eSetWeek(w){eWeek=w;document.getElemenId('e_wkA').classList.toggle('active',w==='A');document.getElementById('e_wkB').classList.toggle('active',w==='B');eEaten=await eGet();eRender();}
+async function eSetWeek(w){eWeek=w;document.getElementById('e_wkA').classList.toggle('active',w==='A');document.getElementById('e_wkB').classList.toggle('active',w==='B');eEaten=await eGet();eRender();}
 document.getElementById('e_wkA').onclick=()=>eSetWeek('A');
 document.getElementById('e_wkB').onclick=()=>eSetWeek('B');
-document.getElementById('e_copy').onclick=()=>{const t=eDayMacros();let o=`${DAYS[eDay]} — ${eWeek==='A'?'Turkey & Eggs':'Salmon & Chicken'} Week\n(${t.cal} kcal · ${t.p}g P · ${t.c}g C · ${t.f}g F)\n\n`;PLAN[eWeek][eDay].forEach(id=>{constotData(id);o+=`${m.slot}: ${m.nm} — ${m.cal} kcal / ${m.p}g P\n   ${m.desc}\n`;});navigator.clipboard.writeText(o).then(()=>toast("Day copied ✓"));};
+document.getElementById('e_copy').onclick=()=>{const t=eDayMacros();let o=`${DAYS[eDay]} — ${eWeek==='A'?'Turkey & Eggs':'Salmon & Chicken'} Week\n(${t.cal} kcal · ${t.p}g P · ${t.c}g C · ${t.f}g F)\n\n`;PLAN[eWeek][eDay].forEach(id=>{const m=slotData(id);o+=`${m.slot}: ${m.nm} — ${m.cal} kcal / ${m.p}g P\n   ${m.desc}\n`;});navigator.clipboard.writeText(o).then(()=>toast("Day copied ✓"));};
 document.getElementById('e_reset').onclick=async()=>{eEaten=[];await eSave();eRender();};
 
 /* ================= SHOP (haul) ================= */
 let sWeek='A',sChecks=[];
 function sResolve(it){return it.ref?{nm:cName(it.ref),q:CATALOG[it.ref].q,qty:it.qty}:{nm:it.nm,q:it.q,qty:it.qty};}
 function sSlug(q){return q.toLowerCase().replace(/[^a-z0-9]+/g,'-');}
-c function sGet(){const v=await sget('haul:'+sWeek);return v?JSON.parse(v):[];}
+async function sGet(){const v=await sget('haul:'+sWeek);return v?JSON.parse(v):[];}
 async function sSave(){await sset('haul:'+sWeek,JSON.stringify(sChecks));}
 function sTotal(){return SHOP[sWeek].cats.reduce((a,c)=>a+c.items.length,0);}
 function sRender(){
@@ -430,11 +430,12 @@ function sRender(){
   const st=document.createElement('div');st.className='staples';st.innerHTML=`<b>Check the cupb first:</b> coconut aminos, chia seeds, olive oil, salt/spices and cinnamon are slow-burn staples — skip re-buying if you still have them.`;wrap.appendChild(st);
   const tot=sTotal();document.getElementById('s_bar').style.width=(sChecks.length/tot*100)+'%';document.getElementById('s_ptxt').textContent=sChecks.length+" of "+tot+" gathered";
 }
-async function sSetWeek(w){sWeek=w;document.getElementById('s_wkA').classList.toggle('active',w==='A');document.getElementById('s_wkB').classList.toggle('active',w===');sChecks=await sGet();sRender();}
+async function sSetWeek(w){sWeek=w;document.getElementById('s_wkA').classList.toggle('active',w==='A');document.getElementById('s_wkB').classList.toggle('active',w==='B');sChecks=await sGet();sRender();}
 document.getElementById('s_wkA').onclick=()=>sSetWeek('A');
 document.getElementById('s_wkB').onclick=()=>sSetWeek('B');
 document.getElementById('s_copy').onclick=()=>{const lines=[];SHOP[sWeek].cats.forEach(c=>c.items.forEach(it=>lines.push(sResolve(it).q)));navigator.clipboard.writeText(lines.join('\n')).then(()=>toast('Copied — paste into Instacart "Add multiple items" ✓'));};
-document.getElementById('s_reset').onclick=async()=>{sChecks=[];await sSave();sRender();}; ================= top-level view switch ================= */
+document.getElementById('s_reset').onclick=async()=>{sChecks=[];await sSave();sRender();};
+/* ================= top-level view switch ================= */
 const HSUB={order:"Ready-made entrées & snacks, on a rolling weekly loop.",eat:"Each day hits ~2,800–3,200 kcal · 180–220g protein.",shop:"Your full Sunday-to-Sunday grocery run, in one list."};
 document.querySelectorAll('.topnav button').forEach(b=>{b.onclick=()=>{
   document.querySelectorAll('.topnav button').forEach(x=>x.classList.remove('active'));
