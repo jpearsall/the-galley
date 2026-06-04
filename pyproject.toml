@@ -7,3 +7,8 @@ dependencies = [
     "anthropic>=0.40",
     "jsonschema>=4.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.15",
+]

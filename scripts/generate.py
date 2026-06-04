@@ -19,7 +19,14 @@ Usage:
   python scripts/generate.py --check    # validate the existing file only, no API call
   python scripts/generate.py --dry-run  # call API + validate, print, do NOT write
 """
-import os, sys, json, copy, argparse, tempfile, datetime
+
+import argparse
+import datetime
+import json
+import os
+import sys
+import tempfile
+
 import jsonschema
 
 try:
@@ -28,9 +35,11 @@ except ImportError:
     anthropic = None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA   = os.path.join(ROOT, os.environ.get("GALLEY_DATA", "data/galley-data.json"))
-SCHEMA = os.path.join(ROOT, os.environ.get("GALLEY_SCHEMA", "schema/galley.schema.json"))
-MODEL  = os.environ.get("GALLEY_MODEL", "claude-sonnet-4-6")
+DATA = os.path.join(ROOT, os.environ.get("GALLEY_DATA", "data/galley-data.json"))
+SCHEMA = os.path.join(
+    ROOT, os.environ.get("GALLEY_SCHEMA", "schema/galley.schema.json")
+)
+MODEL = os.environ.get("GALLEY_MODEL", "claude-sonnet-4-6")
 
 # How much of the existing file the model may rewrite. Structure (slots/macros/
 # appliances/effort) is the carefully-tuned part we DON'T want drifting weekly,
@@ -48,8 +57,11 @@ discontinued for a current GF/DF equivalent, refresh the rotation ordering, and 
 `updated`. Do NOT redesign macros, appliances, or active-minute values.
 Return ONLY the complete JSON object, no prose, no markdown fences."""
 
+
 def load(p):
-    with open(p) as f: return json.load(f)
+    with open(p) as f:
+        return json.load(f)
+
 
 def validate(data, schema):
     jsonschema.validate(data, schema)
@@ -72,6 +84,7 @@ def validate(data, schema):
     if errs:
         raise ValueError("referential integrity failed:\n  " + "\n  ".join(errs))
 
+
 def ask_claude(current, schema):
     if anthropic is None:
         sys.exit("anthropic package not installed: pip install anthropic")
@@ -80,7 +93,8 @@ def ask_claude(current, schema):
         "Here is the current data file. Verify the packaged products are still sold and "
         "still gluten-free + dairy-free (search the web), swap any that look discontinued for "
         "a current GF/DF equivalent, give the rotation a fresh ordering, set `updated` to today ("
-        + datetime.date.today().isoformat() + "), and return the COMPLETE updated JSON.\n\n"
+        + datetime.date.today().isoformat()
+        + "), and return the COMPLETE updated JSON.\n\n"
         "Current file:\n" + json.dumps(current)
     )
     resp = client.messages.create(
@@ -96,6 +110,7 @@ def ask_claude(current, schema):
         text = text.split("```", 2)[1].lstrip("json").strip()
     return json.loads(text)
 
+
 def atomic_write(path, data):
     d = os.path.dirname(path)
     fd, tmp = tempfile.mkstemp(dir=d, suffix=".tmp")
@@ -103,10 +118,13 @@ def atomic_write(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
     os.replace(tmp, path)
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="validate existing file only")
-    ap.add_argument("--dry-run", action="store_true", help="refresh + validate but do not write")
+    ap.add_argument(
+        "--dry-run", action="store_true", help="refresh + validate but do not write"
+    )
     args = ap.parse_args()
 
     schema = load(SCHEMA)
@@ -132,11 +150,15 @@ def main():
         return
 
     if args.dry_run:
-        print("DRY RUN — valid candidate, not writing. Preview of `updated`:", candidate.get("updated"))
+        print(
+            "DRY RUN — valid candidate, not writing. Preview of `updated`:",
+            candidate.get("updated"),
+        )
         return
 
     atomic_write(DATA, candidate)
     print(f"published {DATA} (updated {candidate.get('updated')}) ✓")
+
 
 if __name__ == "__main__":
     main()
