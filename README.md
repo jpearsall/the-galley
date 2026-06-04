@@ -31,18 +31,15 @@ to separate data from presentation.
 |`schema/galley.schema.json`      |JSON Schema the data must satisfy                         |
 |`scripts/generate.py`            |refresh + validate + publish (the only thing on a cadence)|
 |`.github/workflows/refresh.yml`  |**recommended** scheduler — zero infra                    |
-|`k8s/cronjob.yaml` + `Dockerfile`|cluster alternative, if you prefer                        |
-|`requirements.txt`               |`anthropic`, `jsonschema`                                 |
+|`k8s/cronjob.yml` + `Dockerfile` |cluster alternative, if you prefer                        |
+|`pyproject.toml`                 |dependencies (`anthropic`, `jsonschema`); managed by uv   |
 
 ## Run it locally
 
 ```bash
-cd galley-pipeline
-pip install -r requirements.txt
-python scripts/generate.py --check      # validate the current file, no API call
-export ANTHROPIC_API_KEY=sk-ant-...
-python scripts/generate.py --dry-run    # call the API + validate, but don't write
-python scripts/generate.py              # refresh for real (atomic, validated)
+uv run python scripts/generate.py --check                        # validate the current file, no API call
+ANTHROPIC_API_KEY=... uv run python scripts/generate.py --dry-run  # call the API + validate, but don't write
+ANTHROPIC_API_KEY=... uv run python scripts/generate.py            # refresh for real (atomic, validated)
 ```
 
 ## Option A — GitHub Actions (recommended)
