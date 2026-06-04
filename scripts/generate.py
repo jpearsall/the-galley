@@ -118,9 +118,31 @@ def ask_claude(current, schema):
             f"API returned no text block. stop_reason={resp.stop_reason!r}, "
             f"block types present: {block_types}"
         )
-    if text.startswith("```"):
-        text = text.split("```", 2)[1].lstrip("json").strip()
-    return json.loads(text)
+    # strip markdown fences if present
+    if "```" in text:
+        parts = text.split("```")
+        # odd-indexed parts are inside fences
+        for part in parts[1::2]:
+            candidate = part.lstrip("json").strip()
+            if candidate.startswith("{"):
+                text = candidate
+                break
+    # skip any prose the model emitted before the JSON object
+    brace = text.find("{")
+    if brace == -1:
+        raise RuntimeError(
+            f"No JSON object found in response. "
+            f"stop_reason={resp.stop_reason!r}. "
+            f"First 500 chars: {text[:500]!r}"
+        )
+    text = text[brace:]
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(
+            f"JSON parse failed: {exc}. "
+            f"First 300 chars of extracted text: {text[:300]!r}"
+        ) from exc
 
 
 def atomic_write(path, data):
