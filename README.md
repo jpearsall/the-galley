@@ -72,6 +72,50 @@ On load it fetches `data/galley-data.json` with `cache: 'no-store'`, so the week
 pipeline refresh is always picked up without a hard reload. State (checked items,
 theme, rotation mode) persists in `localStorage`.
 
+## Forking & customization
+
+The pipeline is diet-agnostic — the dietary constraints live in two places you edit once:
+
+### 1. The system prompt (`scripts/generate.py` → `SYSTEM`)
+
+This is what tells Claude what to preserve and what it may change. Replace the GF/DF
+constraints with your own:
+
+```python
+SYSTEM = """You maintain a [your diet] meal-and-grocery data file for one person.
+Hard constraints you must preserve:
+- Every food item must be [your constraints].
+- Keep daily plans roughly [X]–[Y] kcal and at least ~[Z]g protein/day.
+- ...
+Return ONLY the complete JSON object, no prose, no markdown fences."""
+```
+
+### 2. The data file (`data/galley-data.json`)
+
+Replace the contents with your own meals, catalog items, rotation, and shopping list.
+The schema (`schema/galley.schema.json`) enforces structure but not specific foods —
+the macro bounds (`cal`, `p`, `c`, `f` min/max) can be widened or tightened there too.
+
+Key fields to set for your situation:
+
+| Field | What to change |
+|---|---|
+| `targets` | Your daily calorie and protein goals (`calLo`, `calHi`, `pLo`, `pHi`) |
+| `catalog` | Your packaged products — one entry per item, referenced everywhere else |
+| `meals` | Your composed plates — appliance, hands-on minutes, macros |
+| `rotation` | Your ready-made loop (4–6 weeks of entrée + snack combos) |
+| `plan` | Your 7-day meal plan for weeks A and B |
+| `shop` | Your grocery categories and items |
+
+### Setup checklist (after forking)
+
+1. Edit `SYSTEM` in `scripts/generate.py` for your dietary constraints
+2. Replace `data/galley-data.json` with your initial data (`uv run python scripts/generate.py --check` to validate)
+3. Add `ANTHROPIC_API_KEY` and `GALLEY_PUSH_TOKEN` as repo secrets (see **GitHub Actions setup** above)
+4. Enable **Allow auto-merge** and **Allow GitHub Actions to create PRs** in repo settings
+5. Enable GitHub Pages: **Settings → Pages → Deploy from branch → `main` / `/ (root)`**
+6. Trigger a manual run from the Actions tab to confirm the pipeline works end-to-end
+
 ## Honest caveats
 
 - **Web search must be enabled** for your org in the Anthropic Console, and it bills
