@@ -30,7 +30,10 @@ jobs:
 
       - name: Open auto-merge PR if data changed
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PAT from a real user so push + PR creation trigger CI workflows.
+          # GITHUB_TOKEN (github-actions[bot]) suppresses workflow triggers
+          # as an anti-recursion guard, so required checks would never report.
+          GH_TOKEN: ${{ secrets.GALLEY_PUSH_TOKEN }}
         run: |
           if [[ -z "$(git status --porcelain data/galley-data.json)" ]]; then
             echo "no changes to commit"
@@ -43,6 +46,7 @@ jobs:
           git checkout -b "${BRANCH}"
           git add data/galley-data.json
           git commit -m "chore: weekly galley data refresh (${DATE})"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
           git push origin "${BRANCH}" --force
           gh pr create \
             --title "chore: weekly galley data refresh (${DATE})" \
