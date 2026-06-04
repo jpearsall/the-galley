@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   refresh:
@@ -27,17 +28,25 @@ jobs:
           GALLEY_MODEL: claude-sonnet-4-6
         run: uv run python scripts/generate.py
 
-      - name: Commit if changed
+      - name: Open auto-merge PR if data changed
         env:
-          GALLEY_PUSH_TOKEN: ${{ secrets.GALLEY_PUSH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [[ -n "$(git status --porcelain data/galley-data.json)" ]]; then
-            git config user.name  "galley-bot"
-            git config user.email "galley-bot@users.noreply.github.com"
-            git add data/galley-data.json
-            git commit -m "chore: weekly galley data refresh ($(date -u +%F))"
-            git remote set-url origin "https://x-access-token:${GALLEY_PUSH_TOKEN}@github.com/${{ github.repository }}.git"
-            git push origin main
-          else
+          if [[ -z "$(git status --porcelain data/galley-data.json)" ]]; then
             echo "no changes to commit"
+            exit 0
           fi
+          DATE="$(date -u +%F)"
+          BRANCH="bot/data-refresh-${DATE}"
+          git config user.name  "galley-bot"
+          git config user.email "galley-bot@users.noreply.github.com"
+          git checkout -b "${BRANCH}"
+          git add data/galley-data.json
+          git commit -m "chore: weekly galley data refresh (${DATE})"
+          git push origin "${BRANCH}"
+          gh pr create \
+            --title "chore: weekly galley data refresh (${DATE})" \
+            --body "Automated weekly data refresh. CI validates the data file before auto-merge fires." \
+            --base main \
+            --head "${BRANCH}"
+          gh pr merge --auto --squash --delete-branch "${BRANCH}"
