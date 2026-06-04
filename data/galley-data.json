@@ -20,74 +20,68 @@
     "klime": {
       "brand": "Kevin's Natural Foods",
       "nm": "Cilantro Lime Chicken",
-      "note": "Fully cooked · GF + DF",
+      "note": "Fully cooked · GF + DF · certified GF (GFCO)",
       "q": "Kevins Natural Foods Cilantro Lime Chicken"
     },
     "ksich": {
       "brand": "Kevin's Natural Foods",
       "nm": "Sichuan Chicken & Green Beans",
-      "note": "GF + DF · ~5 min",
-      "q": "Kevins Natural Foods Sichuan Chicken"
+      "note": "GF + DF · soy-free sichuan sauce · ~5 min",
+      "q": "Kevins Natural Foods Sichuan Chicken Green Beans"
     },
     "klemon": {
       "brand": "Kevin's Natural Foods",
-      "nm": "Lemongrass Basil Chicken",
-      "note": "GF + DF · no refined sugar",
-      "q": "Kevins Natural Foods Lemongrass Basil Chicken"
+      "nm": "Lemongrass Chicken",
+      "note": "GF + DF · coconut-milk sauce · no refined sugar",
+      "q": "Kevins Natural Foods Lemongrass Chicken"
     },
     "kkorean": {
       "brand": "Kevin's Natural Foods",
       "nm": "Korean-Style BBQ Chicken",
-      "note": "GF + DF · coconut aminos",
+      "note": "GF + DF · coconut aminos · certified GF",
       "q": "Kevins Natural Foods Korean BBQ Chicken"
     },
     "kroast": {
       "brand": "Kevin's Natural Foods",
       "nm": "Roasted Garlic Chicken",
-      "note": "GF + DF · high protein",
+      "note": "GF + DF · coconut-milk cream sauce · high protein",
       "q": "Kevins Natural Foods Roasted Garlic Chicken"
     },
     "kbeef": {
       "brand": "Kevin's Natural Foods",
       "nm": "Mongolian-Style Beef",
-      "note": "GF + DF · check label",
+      "note": "GF + DF · certified GF (GFCO) · soy-free",
       "q": "Kevins Natural Foods Mongolian Beef"
     },
-    "sthai": {
+    "kthai": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Thai-Style Coconut Chicken",
+      "note": "GF + DF · coconut-milk curry · certified GF",
+      "q": "Kevins Natural Foods Thai Style Coconut Chicken"
+    },
+    "scoco": {
       "brand": "Saffron Road",
-      "nm": "Thai Green Curry Chicken",
+      "nm": "Coconut Curry Chicken",
       "note": "Certified GF · coconut-based (DF)",
-      "q": "Saffron Road Thai Green Curry Chicken"
+      "q": "Saffron Road Coconut Curry Chicken frozen"
     },
     "slemon": {
       "brand": "Saffron Road",
       "nm": "Lemongrass Basil Chicken",
-      "note": "Certified GF · confirm DF",
-      "q": "Saffron Road Lemongrass Basil Chicken"
+      "note": "Certified GF · coconut cream base (DF)",
+      "q": "Saffron Road Lemongrass Basil Chicken frozen"
     },
     "smoroc": {
       "brand": "Saffron Road",
-      "nm": "Moroccan-Style Chicken",
-      "note": "Certified GF · confirm DF",
-      "q": "Saffron Road Moroccan Chicken"
-    },
-    "hckorean": {
-      "brand": "Healthy Choice Power Bowls",
-      "nm": "Korean-Inspired Beef Bowl",
-      "note": "GF + DF · verify label",
-      "q": "Healthy Choice Power Bowl Korean Beef"
-    },
-    "hccuban": {
-      "brand": "Healthy Choice Power Bowls",
-      "nm": "Cuban-Inspired Pork Bowl",
-      "note": "GF + DF · verify label",
-      "q": "Healthy Choice Power Bowl Cuban Pork"
+      "nm": "Moroccan-Inspired Chicken & Potatoes",
+      "note": "Certified GF · confirm DF at label",
+      "q": "Saffron Road Moroccan Chicken frozen gluten free"
     },
     "amychili": {
       "brand": "Amy's",
       "nm": "Black Bean Chili",
       "note": "GF + DF (dairy-free SKU)",
-      "q": "Amys Black Bean Chili gluten free"
+      "q": "Amys Black Bean Chili gluten free dairy free"
     },
     "amythai": {
       "brand": "Amy's",
@@ -462,104 +456,104 @@
   "rotation": [
     {
       "entrees": [
-        "klime",
-        "ksich",
-        "sthai",
-        "hckorean",
-        "amychili"
-      ],
-      "snacks": [
-        "rx",
-        "ejcook",
-        "skinny",
-        "chomps",
-        "hippeas",
-        "thats"
-      ]
-    },
-    {
-      "entrees": [
-        "klemon",
         "kkorean",
-        "smoroc",
-        "hccuban",
-        "amythai"
+        "klemon",
+        "scoco",
+        "amychili",
+        "kthai"
       ],
       "snacks": [
-        "go",
-        "ejbite",
-        "lara",
-        "jerky",
-        "bada",
+        "chomps",
+        "rx",
+        "skinny",
+        "biena",
+        "thats",
         "marys"
       ]
     },
     {
       "entrees": [
-        "kroast",
-        "kbeef",
+        "klime",
+        "ksich",
         "slemon",
-        "hckorean",
-        "sthai"
+        "amythai",
+        "kbeef"
+      ],
+      "snacks": [
+        "go",
+        "ejcook",
+        "lara",
+        "jerky",
+        "hippeas",
+        "dang"
+      ]
+    },
+    {
+      "entrees": [
+        "kroast",
+        "kthai",
+        "smoroc",
+        "amychili",
+        "scoco"
       ],
       "snacks": [
         "rx",
         "madegood",
-        "dang",
         "chomps",
-        "biena",
+        "bada",
+        "simple",
         "skinny"
       ]
     },
     {
       "entrees": [
-        "klime",
         "kkorean",
-        "smoroc",
-        "hccuban",
-        "amychili"
+        "klemon",
+        "slemon",
+        "amythai",
+        "kbeef"
       ],
       "snacks": [
         "go",
-        "simple",
         "thats",
-        "jerky",
-        "hippeas",
-        "lara"
+        "lara",
+        "ejbite",
+        "biena",
+        "jerky"
+      ]
+    },
+    {
+      "entrees": [
+        "klime",
+        "kroast",
+        "scoco",
+        "amychili",
+        "kthai"
+      ],
+      "snacks": [
+        "ejcook",
+        "chomps",
+        "dang",
+        "bada",
+        "marys",
+        "madegood"
       ]
     },
     {
       "entrees": [
         "ksich",
-        "klemon",
-        "sthai",
-        "hccuban",
-        "amythai"
-      ],
-      "snacks": [
-        "ejcook",
-        "bada",
-        "dang",
-        "chomps",
-        "biena",
-        "marys"
-      ]
-    },
-    {
-      "entrees": [
-        "kroast",
         "kkorean",
         "smoroc",
-        "hckorean",
-        "amychili"
+        "amythai",
+        "klemon"
       ],
       "snacks": [
         "go",
-        "madegood",
-        "skinny",
+        "rx",
+        "simple",
         "jerky",
         "hippeas",
-        "simple"
+        "skinny"
       ]
     }
   ],
