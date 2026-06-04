@@ -43,7 +43,7 @@ jobs:
           git checkout -b "${BRANCH}"
           git add data/galley-data.json
           git commit -m "chore: weekly galley data refresh (${DATE})"
-          git push origin "${BRANCH}"
+          git push origin "${BRANCH}" --force
           gh pr create \
             --title "chore: weekly galley data refresh (${DATE})" \
             --body "Automated weekly data refresh. CI validates the data file before auto-merge fires." \
