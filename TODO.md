@@ -10,4 +10,4 @@ Tracked as GitHub issues on [jpearsall/the-galley](https://github.com/jpearsall/
 - [ ] **#4** Add GitHub Actions workflow to build and push the Docker image to GHCR on push to `master`
 - [x] **#5** Wire up the app shell — fetch from `data/galley-data.json`, swap `sget`/`sset` to `localStorage`, rename to `index.html`
 - [x] **#6** Enable GitHub Pages — Settings → Pages → Deploy from branch → `main` / `/ (root)`
-- [ ] **#7** Fix `$id` in `schema/galley.schema.json` — replace `https://example.com/` with the real hosted URL
+- [x] **#7** Fix `$id` in `schema/galley.schema.json` — replace `https://example.com/` with the real hosted URL

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/galley.schema.json",
+  "$id": "https://jpearsall.github.io/the-galley/schema/galley.schema.json",
   "title": "Galley data file",
   "type": "object",
   "required": ["schemaVersion", "updated", "targets", "days", "catalog", "meals", "batch", "rotation", "plan", "shop"],
