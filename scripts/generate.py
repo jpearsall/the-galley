@@ -99,13 +99,25 @@ def ask_claude(current, schema):
     )
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=16000,
+        max_tokens=32000,
         system=SYSTEM,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 8}],
         messages=[{"role": "user", "content": prompt}],
     )
+    block_types = [b.type for b in resp.content]
+    print(f"stop_reason={resp.stop_reason} blocks={block_types}")
+    if resp.stop_reason == "max_tokens":
+        raise RuntimeError(
+            "API response hit max_tokens limit — output was truncated. "
+            "Increase max_tokens or reduce input size."
+        )
     # concatenate the text blocks (tool_use / server tool blocks are skipped)
     text = "".join(b.text for b in resp.content if b.type == "text").strip()
+    if not text:
+        raise RuntimeError(
+            f"API returned no text block. stop_reason={resp.stop_reason!r}, "
+            f"block types present: {block_types}"
+        )
     if text.startswith("```"):
         text = text.split("```", 2)[1].lstrip("json").strip()
     return json.loads(text)
