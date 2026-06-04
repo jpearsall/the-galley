@@ -4,11 +4,11 @@
 
 A personal gluten-free / dairy-free meal system, in two parts:
 
-1. **`the-galley.html`** — a self-contained single-file web app with three tabs:
+1. **`index.html`** — a self-contained single-file web app with three tabs:
    - **Order**: rotating ready-made entrées + snacks (4- or 6-week loop, auto-detects current week)
    - **Eat**: daily meal plan with macros + per-meal appliance & hands-on-minutes tags
    - **Shop**: Sunday-to-Sunday grocery list with Walmart/Instacart links + Instacart bulk-add copy
-   Has an Auto/Light/Dark theme toggle. Currently persists state via `window.storage` — must swap to `localStorage` when hosted (see TODO #5).
+   Has an Auto/Light/Dark theme toggle. Fetches `data/galley-data.json` on load; persists state via `localStorage`.
 
 2. **`galley-pipeline/`** — a cron job that refreshes the app's data weekly. The app shell never regenerates; only `data/galley-data.json` does.
 
@@ -16,7 +16,7 @@ A personal gluten-free / dairy-free meal system, in two parts:
 
 | Path | Role |
 |------|------|
-| `the-galley.html` | Self-contained app shell — not yet committed (see TODO #5/#6) |
+| `index.html` | Self-contained app shell — served by GitHub Pages |
 | `scripts/generate.py` | The only pipeline script — refresh, validate, publish |
 | `data/galley-data.json` | Single source of truth for the app |
 | `schema/galley.schema.json` | JSON Schema the data must satisfy |

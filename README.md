@@ -27,7 +27,8 @@ to separate data from presentation.
 
 |Path                             |Role                                                      |
 |---------------------------------|----------------------------------------------------------|
-|`data/galley-data.json`          |the single source of truth (seeded from the live app)     |
+|`index.html`                     |the app — served by GitHub Pages, never regenerated       |
+|`data/galley-data.json`          |the single source of truth (refreshed weekly by pipeline) |
 |`schema/galley.schema.json`      |JSON Schema the data must satisfy                         |
 |`scripts/generate.py`            |refresh + validate + publish (the only thing on a cadence)|
 |`.github/workflows/refresh.yml`  |**recommended** scheduler — zero infra                    |
@@ -44,11 +45,10 @@ ANTHROPIC_API_KEY=... uv run python scripts/generate.py            # refresh for
 
 ## Option A — GitHub Actions (recommended)
 
-1. Push this folder to a repo.
 1. **Settings → Secrets and variables → Actions** → add `ANTHROPIC_API_KEY`.
 1. The workflow runs every Sunday and commits the refreshed JSON. Trigger a test run
    from the **Actions** tab (“Run workflow”).
-1. Serve the app + JSON from GitHub Pages (or any static host).
+1. **Settings → Pages** → source: Deploy from branch → `main` / `/ (root)` → Save.
 
 ## Option B — Kubernetes CronJob
 
@@ -62,35 +62,19 @@ kubectl apply -f k8s/cronjob.yaml
 The job writes to a PVC; point an nginx static sidecar at that volume, or change the
 container command to `aws s3 cp /data/galley-data.json s3://your-bucket/` to publish.
 
-## The one app-shell change (to consume the JSON when hosted)
+## Hosting
 
-Right now the app keeps its data inline and persists checkboxes via Claude’s artifact
-storage. To run as a normal hosted site that reads the refreshed file, make two edits
-to `the-galley.html`:
+The app is a single `index.html` served by GitHub Pages from the root of `main`.
+On load it fetches `data/galley-data.json` with `cache: ‘no-store’`, so the weekly
+pipeline refresh is always picked up without a hard reload. State (checked items,
+theme, rotation mode) persists in `localStorage`.
 
-**1. Load data from the JSON instead of the inline `const` blocks.** Replace the
-`CATALOG / MEALS / BATCH / ROTATION / PLAN / SHOP / DAYS / CAL_*` declarations with a
-fetch, and wrap `init()` so it runs after load:
+To run locally:
 
-```js
-let CATALOG, MEALS, BATCH, ROTATION, PLAN, SHOP, DAYS, CAL_LO, CAL_HI, P_LO, P_HI;
-async function loadData(){
-  const d = await (await fetch('galley-data.json', {cache:'no-store'})).json();
-  ({catalog:CATALOG, meals:MEALS, batch:BATCH, rotation:ROTATION, plan:PLAN, shop:SHOP, days:DAYS} = d);
-  ({calLo:CAL_LO, calHi:CAL_HI, pLo:P_LO, pHi:P_HI} = d.targets);
-}
-// then: loadData().then(init);
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000/
 ```
-
-**2. Swap persistence off Claude storage to `localStorage`** (the app calls go
-through the `sget`/`sset` helpers, so this is the whole change):
-
-```js
-async function sget(k){ return localStorage.getItem('galley:'+k); }
-async function sset(k,v){ localStorage.setItem('galley:'+k, v); }
-```
-
-That’s it — everything else (themes, tabs, checks, copy buttons) keeps working.
 
 ## Honest caveats
 
