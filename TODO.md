@@ -9,5 +9,5 @@ Tracked as GitHub issues on [jpearsall/the-galley](https://github.com/jpearsall/
 - [ ] **#3** Fix Python version mismatch — `.python-version` and `pyproject.toml` require 3.14 but Dockerfile builds on `python3.12-bookworm-slim`; align them
 - [ ] **#4** Add GitHub Actions workflow to build and push the Docker image to GHCR on push to `master`
 - [x] **#5** Wire up the app shell — fetch from `data/galley-data.json`, swap `sget`/`sset` to `localStorage`, rename to `index.html`
-- [ ] **#6** Enable GitHub Pages — Settings → Pages → Deploy from branch → `main` / `/ (root)`
+- [x] **#6** Enable GitHub Pages — Settings → Pages → Deploy from branch → `main` / `/ (root)`
 - [ ] **#7** Fix `$id` in `schema/galley.schema.json` — replace `https://example.com/` with the real hosted URL
