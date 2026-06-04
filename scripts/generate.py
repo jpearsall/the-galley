@@ -97,13 +97,17 @@ def ask_claude(current, schema):
         + "), and return the COMPLETE updated JSON.\n\n"
         "Current file:\n" + json.dumps(current)
     )
-    resp = client.messages.create(
+    # stream() avoids the SDK's "streaming required for >10min requests" guard
+    # that triggers at large max_tokens values; get_final_message() returns the
+    # same Message object as create() would.
+    with client.messages.stream(
         model=MODEL,
         max_tokens=32000,
         system=SYSTEM,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 8}],
         messages=[{"role": "user", "content": prompt}],
-    )
+    ) as stream:
+        resp = stream.get_final_message()
     block_types = [b.type for b in resp.content]
     print(f"stop_reason={resp.stop_reason} blocks={block_types}")
     if resp.stop_reason == "max_tokens":
