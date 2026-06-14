@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-06-04",
+  "updated": "2026-06-14",
   "targets": {
     "calLo": 2800,
     "calHi": 3200,
@@ -20,79 +20,79 @@
     "klime": {
       "brand": "Kevin's Natural Foods",
       "nm": "Cilantro Lime Chicken",
-      "note": "Fully cooked · GF + DF · certified GF (GFCO)",
+      "note": "Fully cooked · GF + DF · certified GF (GFCO) · paleo/keto certified",
       "q": "Kevins Natural Foods Cilantro Lime Chicken"
     },
     "ksich": {
       "brand": "Kevin's Natural Foods",
-      "nm": "Sichuan Chicken & Green Beans",
-      "note": "GF + DF · soy-free sichuan sauce · ~5 min",
-      "q": "Kevins Natural Foods Sichuan Chicken Green Beans"
+      "nm": "Sichuan Chicken Green Bean Stir-Fry",
+      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min",
+      "q": "Kevins Natural Foods Sichuan Chicken Green Bean Stir Fry"
     },
     "klemon": {
       "brand": "Kevin's Natural Foods",
       "nm": "Lemongrass Chicken",
-      "note": "GF + DF · coconut-milk sauce · no refined sugar",
+      "note": "GF + DF · coconut-milk sauce · no refined sugar · certified GF",
       "q": "Kevins Natural Foods Lemongrass Chicken"
     },
     "kkorean": {
       "brand": "Kevin's Natural Foods",
       "nm": "Korean-Style BBQ Chicken",
-      "note": "GF + DF · coconut aminos · certified GF",
+      "note": "GF + DF · soy-free bulgogi sauce · coconut aminos · certified GF (GFCO)",
       "q": "Kevins Natural Foods Korean BBQ Chicken"
     },
     "kroast": {
       "brand": "Kevin's Natural Foods",
       "nm": "Roasted Garlic Chicken",
-      "note": "GF + DF · coconut-milk cream sauce · high protein",
+      "note": "GF + DF · coconut-milk cream sauce · certified GF (GFCO) · high protein",
       "q": "Kevins Natural Foods Roasted Garlic Chicken"
     },
     "kbeef": {
       "brand": "Kevin's Natural Foods",
       "nm": "Mongolian-Style Beef",
-      "note": "GF + DF · certified GF (GFCO) · soy-free",
+      "note": "GF + DF · certified GF (GFCO) · soy-free · grass-fed beef",
       "q": "Kevins Natural Foods Mongolian Beef"
     },
     "kthai": {
       "brand": "Kevin's Natural Foods",
       "nm": "Thai-Style Coconut Chicken",
-      "note": "GF + DF · coconut-milk curry · certified GF",
+      "note": "GF + DF · coconut-milk curry · certified GF (GFCO) · paleo certified",
       "q": "Kevins Natural Foods Thai Style Coconut Chicken"
     },
-    "scoco": {
-      "brand": "Saffron Road",
-      "nm": "Coconut Curry Chicken",
-      "note": "Certified GF · coconut-based (DF)",
-      "q": "Saffron Road Coconut Curry Chicken frozen"
+    "ktikka": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Chicken Tikka Masala",
+      "note": "GF + DF · coconut-milk tomato sauce · certified GF · on Kevin's DF collection",
+      "q": "Kevins Natural Foods Chicken Tikka Masala"
     },
-    "slemon": {
-      "brand": "Saffron Road",
-      "nm": "Lemongrass Basil Chicken",
-      "note": "Certified GF · coconut cream base (DF)",
-      "q": "Saffron Road Lemongrass Basil Chicken frozen"
+    "kteriyaki": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Teriyaki-Style Chicken",
+      "note": "GF + DF · soy-free teriyaki · coconut aminos · certified GF",
+      "q": "Kevins Natural Foods Teriyaki Style Chicken"
     },
-    "smoroc": {
-      "brand": "Saffron Road",
-      "nm": "Moroccan-Inspired Chicken & Potatoes",
-      "note": "Certified GF · confirm DF at label",
-      "q": "Saffron Road Moroccan Chicken frozen gluten free"
+    "khoney": {
+      "brand": "Kevin's Natural Foods",
+      "nm": "Honey Garlic Chicken with Green Beans",
+      "note": "GF + DF · soy-free honey garlic sauce · certified GF",
+      "q": "Kevins Natural Foods Honey Garlic Chicken Green Beans"
     },
     "amychili": {
       "brand": "Amy's",
       "nm": "Black Bean Chili",
-      "note": "GF + DF (dairy-free SKU)",
+      "note": "GF + DF (dairy-free SKU) · confirmed on Amy's DF lineup",
       "q": "Amys Black Bean Chili gluten free dairy free"
     },
     "amythai": {
       "brand": "Amy's",
       "nm": "Thai Coconut Curry Bowl",
-      "note": "GF + DF · coconut-based",
+      "note": "GF + DF · coconut-based · no dairy ingredients",
       "q": "Amys Thai Coconut Curry Bowl gluten free"
     },
     "rx": {
       "brand": "RXBAR",
       "nm": "Protein Bar",
-      "note": "GF + DF · ~12g protein",
+      "note": "GF + DF · ~12g protein · made from egg whites, dates, nuts",
       "q": "RXBAR",
       "cal": 210,
       "p": 12,
@@ -103,7 +103,7 @@
     "chomps": {
       "brand": "Chomps",
       "nm": "Meat Sticks",
-      "note": "GF + DF · protein",
+      "note": "GF + DF · no fillers · high protein",
       "q": "Chomps meat sticks",
       "cal": 200,
       "p": 18,
@@ -114,7 +114,7 @@
     "bada": {
       "brand": "Bada Bean Bada Boom",
       "nm": "Roasted Broad Beans",
-      "note": "GF + DF · crunchy protein",
+      "note": "GF + DF · crunchy plant protein",
       "q": "Bada Bean Bada Boom broad beans",
       "cal": 200,
       "p": 12,
@@ -125,7 +125,7 @@
     "trail": {
       "brand": "",
       "nm": "Trail Mix (GF/DF)",
-      "note": "GF + DF",
+      "note": "GF + DF · whole-food fats + carbs",
       "q": "trail mix nuts dried fruit",
       "cal": 250,
       "p": 7,
@@ -136,79 +136,79 @@
     "go": {
       "brand": "GoMacro",
       "nm": "MacroBar",
-      "note": "GF + DF · plant protein",
+      "note": "GF + DF · certified organic · plant protein",
       "q": "GoMacro MacroBar"
     },
     "ejcook": {
       "brand": "Enjoy Life",
       "nm": "Soft-Baked Cookies",
-      "note": "Allergen-free: GF + DF",
+      "note": "Certified allergen-free · GF + DF",
       "q": "Enjoy Life soft baked cookies"
     },
     "ejbite": {
       "brand": "Enjoy Life",
       "nm": "Protein Bites",
-      "note": "GF + DF",
+      "note": "GF + DF · allergen-free · chocolate varieties",
       "q": "Enjoy Life protein bites"
     },
     "skinny": {
       "brand": "SkinnyPop",
       "nm": "Popcorn",
-      "note": "GF + DF",
+      "note": "GF + DF · non-GMO · simple ingredients",
       "q": "SkinnyPop popcorn"
     },
     "lara": {
       "brand": "LÄRABAR",
       "nm": "Fruit & Nut Bar",
-      "note": "GF + DF · whole-food",
+      "note": "GF + DF · whole-food · minimal ingredients",
       "q": "Larabar"
     },
     "thats": {
       "brand": "That's It",
       "nm": "Fruit Bars",
-      "note": "GF + DF · 2 ingredients",
+      "note": "GF + DF · 2 ingredients only",
       "q": "Thats It fruit bars"
     },
     "marys": {
       "brand": "Mary's Gone Crackers",
       "nm": "Seed Crackers",
-      "note": "GF + DF",
+      "note": "GF + DF · certified GF · organic seeds",
       "q": "Marys Gone Crackers"
     },
     "hippeas": {
       "brand": "Hippeas",
       "nm": "Chickpea Puffs",
-      "note": "GF + DF",
+      "note": "GF + DF · plant-based · vegan certified",
       "q": "Hippeas chickpea puffs"
     },
     "jerky": {
       "brand": "Country Archer",
       "nm": "Beef Jerky",
-      "note": "GF + DF · protein",
+      "note": "GF + DF · no MSG · high protein",
       "q": "Country Archer beef jerky"
     },
     "biena": {
       "brand": "Biena",
       "nm": "Roasted Chickpea Snacks",
-      "note": "GF + DF",
+      "note": "GF + DF · allergen-friendly · high fiber",
       "q": "Biena roasted chickpeas"
     },
     "madegood": {
       "brand": "MadeGood",
       "nm": "Granola Minis",
-      "note": "GF + DF · allergen-friendly",
+      "note": "GF + DF · allergen-friendly · made in dedicated facility",
       "q": "MadeGood granola minis"
     },
     "simple": {
       "brand": "Simple Mills",
       "nm": "Almond Flour Crackers",
-      "note": "GF · most DF, check flavor",
+      "note": "GF · most flavors DF — verify flavor label",
       "q": "Simple Mills almond flour crackers"
     },
     "dang": {
       "brand": "Dang",
-      "nm": "Coconut / Rice Chips",
-      "note": "GF + DF",
+      "nm": "Coconut Chips",
+      "note": "GF + DF · minimal ingredients · toasted coconut",
       "q": "Dang coconut chips"
     }
   },
@@ -251,7 +251,7 @@
       "nm": "Reheat Entrée + Rice",
       "appliance": "Microwave",
       "active": 3,
-      "desc": "Kevin's/Amy's GF-DF entrée · batched rice · bagged greens",
+      "desc": "Kevin's GF-DF entrée · batched rice · bagged greens",
       "cal": 620,
       "p": 46,
       "c": 72,
@@ -456,11 +456,11 @@
   "rotation": [
     {
       "entrees": [
-        "kkorean",
-        "klemon",
-        "scoco",
+        "klime",
+        "ktikka",
         "amychili",
-        "kthai"
+        "kthai",
+        "kkorean"
       ],
       "snacks": [
         "chomps",
@@ -468,33 +468,33 @@
         "skinny",
         "biena",
         "thats",
-        "marys"
+        "jerky"
       ]
     },
     {
       "entrees": [
-        "klime",
         "ksich",
-        "slemon",
+        "klemon",
         "amythai",
-        "kbeef"
+        "kbeef",
+        "kteriyaki"
       ],
       "snacks": [
         "go",
         "ejcook",
         "lara",
-        "jerky",
         "hippeas",
-        "dang"
+        "dang",
+        "marys"
       ]
     },
     {
       "entrees": [
         "kroast",
-        "kthai",
-        "smoroc",
+        "khoney",
         "amychili",
-        "scoco"
+        "kthai",
+        "ktikka"
       ],
       "snacks": [
         "rx",
@@ -508,10 +508,10 @@
     {
       "entrees": [
         "kkorean",
-        "klemon",
-        "slemon",
+        "kbeef",
         "amythai",
-        "kbeef"
+        "klime",
+        "kteriyaki"
       ],
       "snacks": [
         "go",
@@ -519,20 +519,20 @@
         "lara",
         "ejbite",
         "biena",
-        "jerky"
+        "chomps"
       ]
     },
     {
       "entrees": [
-        "klime",
+        "ksich",
         "kroast",
-        "scoco",
         "amychili",
-        "kthai"
+        "khoney",
+        "klemon"
       ],
       "snacks": [
         "ejcook",
-        "chomps",
+        "rx",
         "dang",
         "bada",
         "marys",
@@ -541,19 +541,19 @@
     },
     {
       "entrees": [
-        "ksich",
+        "ktikka",
         "kkorean",
-        "smoroc",
         "amythai",
-        "klemon"
+        "kthai",
+        "kbeef"
       ],
       "snacks": [
         "go",
-        "rx",
-        "simple",
         "jerky",
+        "simple",
+        "skinny",
         "hippeas",
-        "skinny"
+        "trail"
       ]
     }
   ],
@@ -742,7 +742,7 @@
           "items": [
             {
               "nm": "Kevin's GF/DF chicken entrées",
-              "qty": "2",
+              "qty": "3",
               "q": "Kevins Natural Foods chicken entree"
             },
             {
