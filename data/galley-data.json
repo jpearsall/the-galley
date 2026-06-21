@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-06-14",
+  "updated": "2026-06-21",
   "targets": {
     "calLo": 2800,
     "calHi": 3200,
@@ -62,7 +62,7 @@
     "ktikka": {
       "brand": "Kevin's Natural Foods",
       "nm": "Chicken Tikka Masala",
-      "note": "GF + DF · coconut-milk tomato sauce · certified GF · on Kevin's DF collection",
+      "note": "GF + DF · coconut-milk tomato sauce · certified GF · current SKU dairy-free (no ghee) · confirmed on Thrive Market DF listing",
       "q": "Kevins Natural Foods Chicken Tikka Masala"
     },
     "kteriyaki": {
@@ -456,103 +456,103 @@
   "rotation": [
     {
       "entrees": [
+        "kkorean",
         "klime",
-        "ktikka",
-        "amychili",
-        "kthai",
-        "kkorean"
+        "amythai",
+        "kroast",
+        "kthai"
       ],
       "snacks": [
         "chomps",
-        "rx",
         "skinny",
         "biena",
+        "rx",
         "thats",
         "jerky"
       ]
     },
     {
       "entrees": [
+        "ktikka",
         "ksich",
+        "amychili",
         "klemon",
-        "amythai",
-        "kbeef",
-        "kteriyaki"
+        "kbeef"
       ],
       "snacks": [
-        "go",
-        "ejcook",
         "lara",
+        "go",
         "hippeas",
+        "ejcook",
         "dang",
         "marys"
       ]
     },
     {
       "entrees": [
-        "kroast",
+        "kteriyaki",
         "khoney",
-        "amychili",
-        "kthai",
-        "ktikka"
+        "amythai",
+        "klime",
+        "kthai"
       ],
       "snacks": [
         "rx",
         "madegood",
-        "chomps",
         "bada",
+        "chomps",
         "simple",
         "skinny"
       ]
     },
     {
       "entrees": [
+        "ksich",
+        "ktikka",
+        "amychili",
         "kkorean",
-        "kbeef",
-        "amythai",
-        "klime",
-        "kteriyaki"
+        "klemon"
       ],
       "snacks": [
         "go",
+        "ejbite",
         "thats",
         "lara",
-        "ejbite",
         "biena",
         "chomps"
       ]
     },
     {
       "entrees": [
-        "ksich",
         "kroast",
-        "amychili",
+        "kbeef",
+        "amythai",
         "khoney",
-        "klemon"
+        "kteriyaki"
       ],
       "snacks": [
         "ejcook",
-        "rx",
         "dang",
-        "bada",
+        "rx",
         "marys",
+        "bada",
         "madegood"
       ]
     },
     {
       "entrees": [
-        "ktikka",
-        "kkorean",
-        "amythai",
         "kthai",
-        "kbeef"
+        "kkorean",
+        "amychili",
+        "ktikka",
+        "ksich"
       ],
       "snacks": [
         "go",
         "jerky",
+        "hippeas",
         "simple",
         "skinny",
-        "hippeas",
         "trail"
       ]
     }
