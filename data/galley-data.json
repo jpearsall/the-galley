@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-08-09",
+  "updated": "2026-08-16",
   "targets": {
     "calLo": 2800,
     "calHi": 3200,
@@ -26,7 +26,7 @@
     "ksich": {
       "brand": "Kevin's Natural Foods",
       "nm": "Sichuan Chicken Green Bean Stir-Fry",
-      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min · verified active Aug 2026",
+      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min · verified active Aug 2026 at Walmart/Kroger/Kevin's site",
       "q": "Kevins Natural Foods Sichuan Chicken Green Bean Stir Fry"
     },
     "klemon": {
@@ -74,7 +74,7 @@
     "khoney": {
       "brand": "Kevin's Natural Foods",
       "nm": "Honey Garlic Chicken with Green Beans",
-      "note": "GF + DF · soy-free honey garlic sauce · certified GF · verified active Aug 2026",
+      "note": "GF + DF · soy-free honey garlic sauce · coconut aminos · certified GF · verified active Aug 2026 at Walmart/Kroger/Kevin's site",
       "q": "Kevins Natural Foods Honey Garlic Chicken Green Beans"
     },
     "amychili": {
@@ -86,7 +86,7 @@
     "amythai": {
       "brand": "Amy's",
       "nm": "Thai Red Curry Bowl",
-      "note": "GF + DF · coconut-milk curry · jasmine rice · vegan · confirmed GF+DF on Amy's site Aug 2026 · replaces discontinued Thai Coconut Curry Bowl SKU",
+      "note": "GF + DF · coconut-milk curry · jasmine rice · vegan · confirmed GF+DF on Amy's site, Walmart, Stop & Shop Aug 2026",
       "q": "Amys Thai Red Curry gluten free dairy free"
     },
     "rx": {
@@ -114,7 +114,7 @@
     "bada": {
       "brand": "Bada Bean Bada Boom",
       "nm": "Roasted Broad Beans",
-      "note": "GF + DF · crunchy plant protein · verified active Aug 2026",
+      "note": "GF + DF · crunchy plant protein · verified active Aug 2026 at CVS/Amazon/direct site",
       "q": "Bada Bean Bada Boom broad beans",
       "cal": 200,
       "p": 12,
@@ -139,17 +139,17 @@
       "note": "GF + DF · certified organic · plant protein · verified active Aug 2026",
       "q": "GoMacro MacroBar"
     },
-    "ejcook": {
-      "brand": "Enjoy Life",
-      "nm": "Soft-Baked Cookies",
-      "note": "Certified allergen-free · GF + DF · free from 14 allergens · certified GF (GFCO) · verified active at Kroger/Whole Foods/Amazon Aug 2026",
-      "q": "Enjoy Life soft baked cookies"
+    "partake": {
+      "brand": "Partake Foods",
+      "nm": "Soft Baked Cookies",
+      "note": "Certified GF + DF · allergen-free · free from top 9 allergens · dedicated GF facility · replaces discontinued Enjoy Life Soft Baked Cookies (facility closed Apr 2024) · verified active at Target/Whole Foods/Amazon Aug 2026",
+      "q": "Partake Foods soft baked cookies gluten free dairy free"
     },
-    "ejbite": {
-      "brand": "Enjoy Life",
+    "thegfb": {
+      "brand": "The GFB",
       "nm": "Protein Bites",
-      "note": "GF + DF · allergen-free · chocolate varieties · now also marketed as Enjoy Bites · verified active at Mariano's/Harris Teeter Aug 2026",
-      "q": "Enjoy Life protein bites"
+      "note": "Certified GF + DF · allergen-friendly · ~7g protein per serving · chocolate varieties · replaces discontinued Enjoy Life Protein Bites (facility closed Apr 2024) · verified active at Whole Foods/Amazon Aug 2026",
+      "q": "The GFB protein bites gluten free dairy free"
     },
     "skinny": {
       "brand": "SkinnyPop",
@@ -190,7 +190,7 @@
     "biena": {
       "brand": "Biena",
       "nm": "Roasted Chickpea Snacks",
-      "note": "GF + DF · allergen-friendly · high fiber · verified active Aug 2026",
+      "note": "GF + DF · allergen-friendly · high fiber · verified active Aug 2026 at Costco/Amazon/direct site",
       "q": "Biena roasted chickpeas"
     },
     "madegood": {
@@ -456,95 +456,95 @@
   "rotation": [
     {
       "entrees": [
-        "kkorean",
         "kthai",
         "klime",
-        "kroast",
-        "ktikka"
+        "ktikka",
+        "ksich",
+        "kroast"
       ],
       "snacks": [
         "chomps",
-        "biena",
         "rx",
-        "jerky",
+        "biena",
         "skinny",
-        "thats"
+        "thats",
+        "jerky"
       ]
     },
     {
       "entrees": [
+        "kkorean",
         "kteriyaki",
-        "kbeef",
         "amychili",
-        "klemon",
-        "ksich"
+        "khoney",
+        "kbeef"
       ],
       "snacks": [
         "lara",
-        "go",
         "dang",
+        "go",
         "marys",
-        "hippeas",
-        "ejcook"
+        "madegood",
+        "thegfb"
       ]
     },
     {
       "entrees": [
-        "khoney",
+        "klemon",
         "amythai",
         "kthai",
-        "klime",
-        "kkorean"
+        "kkorean",
+        "ktikka"
       ],
       "snacks": [
         "bada",
-        "madegood",
-        "chomps",
         "rx",
+        "chomps",
+        "hippeas",
         "simple",
         "skinny"
       ]
     },
     {
       "entrees": [
-        "kbeef",
-        "ktikka",
-        "amychili",
         "kroast",
-        "klemon"
+        "ksich",
+        "amychili",
+        "klime",
+        "khoney"
       ],
       "snacks": [
-        "ejbite",
-        "thats",
-        "go",
+        "thegfb",
         "lara",
+        "go",
+        "thats",
         "biena",
-        "chomps"
+        "trail"
       ]
     },
     {
       "entrees": [
         "kteriyaki",
-        "ksich",
+        "kbeef",
         "amythai",
-        "khoney",
+        "klemon",
         "kthai"
       ],
       "snacks": [
         "madegood",
         "dang",
         "rx",
-        "ejcook",
+        "partake",
         "bada",
         "marys"
       ]
     },
     {
       "entrees": [
-        "klime",
+        "ktikka",
         "kkorean",
         "amychili",
-        "ktikka",
+        "kroast",
         "ksich"
       ],
       "snacks": [
@@ -553,7 +553,7 @@
         "hippeas",
         "go",
         "jerky",
-        "skinny"
+        "chomps"
       ]
     }
   ],
