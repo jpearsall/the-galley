@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-08-16",
+  "updated": "2026-08-23",
   "targets": {
     "calLo": 2800,
     "calHi": 3200,
@@ -20,55 +20,55 @@
     "klime": {
       "brand": "Kevin's Natural Foods",
       "nm": "Cilantro Lime Chicken",
-      "note": "Fully cooked · GF + DF · certified GF (GFCO) · paleo/keto certified · verified active Aug 2026",
+      "note": "Fully cooked · GF + DF · certified GF (GFCO) · paleo/keto certified · verified active Aug 2026 at Kroger/Safeway/Costco/Kevin's site",
       "q": "Kevins Natural Foods Cilantro Lime Chicken"
     },
     "ksich": {
       "brand": "Kevin's Natural Foods",
       "nm": "Sichuan Chicken Green Bean Stir-Fry",
-      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min · verified active Aug 2026 at Walmart/Kroger/Kevin's site",
+      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min · verified active Aug 2026 at Walmart/Target/Kevin's site (Instacart data tag incorrect — Kevin's site & Walmart listing confirm GF+DF)",
       "q": "Kevins Natural Foods Sichuan Chicken Green Bean Stir Fry"
     },
     "klemon": {
       "brand": "Kevin's Natural Foods",
       "nm": "Lemongrass Chicken",
-      "note": "GF + DF · coconut-milk sauce · no refined sugar · certified GF · verified active Aug 2026",
+      "note": "GF + DF · coconut-milk sauce · no refined sugar · certified GF (GFCO) · verified active Aug 2026 at Target/Whole Foods/Instacart/Kevin's site",
       "q": "Kevins Natural Foods Lemongrass Chicken"
     },
     "kkorean": {
       "brand": "Kevin's Natural Foods",
       "nm": "Korean-Style BBQ Chicken",
-      "note": "GF + DF · soy-free bulgogi sauce · coconut aminos · certified GF (GFCO) · verified active Aug 2026",
+      "note": "GF + DF · soy-free bulgogi sauce · coconut aminos · certified GF (GFCO) · verified active Aug 2026 at Kroger/Target/Whole Foods/Kevin's site",
       "q": "Kevins Natural Foods Korean BBQ Chicken"
     },
     "kroast": {
       "brand": "Kevin's Natural Foods",
       "nm": "Roasted Garlic Chicken",
-      "note": "GF + DF · coconut-milk cream sauce · certified GF (GFCO) · high protein · verified active Aug 2026",
+      "note": "GF + DF · coconut-milk cream sauce · certified GF (GFCO) · high protein · no gluten/dairy/soy ingredients confirmed · verified active Aug 2026 at Safeway/Target/Acme/Vons",
       "q": "Kevins Natural Foods Roasted Garlic Chicken"
     },
     "kbeef": {
       "brand": "Kevin's Natural Foods",
       "nm": "Mongolian-Style Beef",
-      "note": "GF + DF · certified GF (GFCO) · soy-free · grass-fed beef · verified active Aug 2026",
+      "note": "GF + DF · certified GF (GFCO) · soy-free · grass-fed beef · coconut aminos sauce · verified active Aug 2026 at Kroger/Safeway/Sprouts/Whole Foods/Amazon",
       "q": "Kevins Natural Foods Mongolian Beef"
     },
     "kthai": {
       "brand": "Kevin's Natural Foods",
       "nm": "Thai-Style Coconut Chicken",
-      "note": "GF + DF · coconut-milk curry · certified GF (GFCO) · paleo certified · verified active Aug 2026",
+      "note": "GF + DF · coconut-milk curry · certified GF (GFCO) · paleo certified · no gluten/dairy/soy ingredients confirmed · verified active Aug 2026 at Safeway/Target/Randalls",
       "q": "Kevins Natural Foods Thai Style Coconut Chicken"
     },
     "ktikka": {
       "brand": "Kevin's Natural Foods",
       "nm": "Chicken Tikka Masala",
-      "note": "GF + DF · coconut-milk tomato sauce · certified GF · current SKU uses coconut butter, no ghee — confirmed DF on Kevin's site & Thrive Market Aug 2026",
+      "note": "GF + DF · coconut-milk tomato sauce · coconut butter (no ghee/dairy) · listed under Kevin's Dairy Free entrée collection · confirmed GF on Instacart/Thrive Market · verified active Aug 2026",
       "q": "Kevins Natural Foods Chicken Tikka Masala"
     },
     "kteriyaki": {
       "brand": "Kevin's Natural Foods",
       "nm": "Teriyaki-Style Chicken",
-      "note": "GF + DF · soy-free teriyaki · coconut aminos · certified GF · verified active Aug 2026",
+      "note": "GF + DF · soy-free teriyaki · coconut aminos · certified GF · verified active Aug 2026 at Kroger/Target/Kevin's site",
       "q": "Kevins Natural Foods Teriyaki Style Chicken"
     },
     "khoney": {
@@ -80,13 +80,13 @@
     "amychili": {
       "brand": "Amy's",
       "nm": "Organic Black Bean Chili",
-      "note": "GF + DF · vegan · certified organic · confirmed GF+DF on Amy's site & Kroger/Walmart Aug 2026",
+      "note": "GF + DF · vegan · certified organic · confirmed GF+DF on Amy's site & Kroger/Walmart · verified active Aug 2026",
       "q": "Amys Organic Black Bean Chili gluten free dairy free"
     },
     "amythai": {
       "brand": "Amy's",
       "nm": "Thai Red Curry Bowl",
-      "note": "GF + DF · coconut-milk curry · jasmine rice · vegan · confirmed GF+DF on Amy's site, Walmart, Stop & Shop Aug 2026",
+      "note": "GF + DF · coconut-milk curry · jasmine rice · vegan · confirmed GF+DF on Amy's site & Walmart/Stop & Shop · verified active Aug 2026",
       "q": "Amys Thai Red Curry gluten free dairy free"
     },
     "rx": {
@@ -456,62 +456,62 @@
   "rotation": [
     {
       "entrees": [
-        "kthai",
+        "kkorean",
         "klime",
         "ktikka",
-        "ksich",
-        "kroast"
+        "kbeef",
+        "kteriyaki"
       ],
       "snacks": [
         "chomps",
-        "rx",
         "biena",
         "skinny",
+        "rx",
         "thats",
         "jerky"
       ]
     },
     {
       "entrees": [
-        "kkorean",
-        "kteriyaki",
+        "kthai",
+        "ksich",
         "amychili",
-        "khoney",
-        "kbeef"
+        "klemon",
+        "kroast"
       ],
       "snacks": [
         "lara",
-        "dang",
         "go",
         "marys",
         "madegood",
+        "dang",
         "thegfb"
       ]
     },
     {
       "entrees": [
-        "klemon",
+        "khoney",
+        "ktikka",
         "amythai",
-        "kthai",
-        "kkorean",
-        "ktikka"
+        "klime",
+        "kkorean"
       ],
       "snacks": [
         "bada",
         "rx",
         "chomps",
         "hippeas",
-        "simple",
-        "skinny"
+        "trail",
+        "simple"
       ]
     },
     {
       "entrees": [
+        "kbeef",
         "kroast",
-        "ksich",
         "amychili",
-        "klime",
-        "khoney"
+        "ksich",
+        "klemon"
       ],
       "snacks": [
         "thegfb",
@@ -519,16 +519,16 @@
         "go",
         "thats",
         "biena",
-        "trail"
+        "skinny"
       ]
     },
     {
       "entrees": [
         "kteriyaki",
-        "kbeef",
+        "kthai",
         "amythai",
-        "klemon",
-        "kthai"
+        "khoney",
+        "kbeef"
       ],
       "snacks": [
         "madegood",
@@ -541,11 +541,11 @@
     },
     {
       "entrees": [
-        "ktikka",
+        "klime",
         "kkorean",
         "amychili",
-        "kroast",
-        "ksich"
+        "ktikka",
+        "kroast"
       ],
       "snacks": [
         "simple",
