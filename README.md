@@ -1,4 +1,4 @@
-# ⚓ The Galley 
+# ⚓ The Galley
 
 *Meal planning for choppy waters.*
 
