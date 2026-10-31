@@ -23,7 +23,7 @@ Keeps the app's **data** current on a weekly cadence without ever regenerating t
 app itself. The app shell (HTML/JS) is fixed; only `data/galley-data.json` changes.
 
 ```
-  ┌─ cron (Sun 14:00 UTC) ─┐
+  ┌─ cron (Sun 14:00 UTC) ──┐
   │  GitHub Actions         │
   └───────────┬─────────────┘
               ▼
@@ -52,6 +52,7 @@ and the previous good file stays live.
 |`.github/workflows/ci.yml`       |lint + validate on every PR (required to merge)           |
 |`k8s/cronjob.yml` + `Dockerfile` |cluster alternative (image name TBD — see issue #2)       |
 |`pyproject.toml`                 |dependencies (`anthropic`, `jsonschema`); managed by uv   |
+|`LICENSE`                        |the license body under which this software is provided    |
 
 ## Run it locally
 
