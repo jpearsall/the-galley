@@ -1,4 +1,6 @@
-# The Galley — Meal Planning and Grocery Shopping for Choppy Waters
+# ⚓ The Galley 
+
+*Meal planning for choppy waters.*
 
 [![refresh](https://github.com/jpearsall/the-galley/actions/workflows/refresh.yml/badge.svg)](https://github.com/jpearsall/the-galley/actions/workflows/refresh.yml)
 [![CI](https://github.com/jpearsall/the-galley/actions/workflows/ci.yml/badge.svg)](https://github.com/jpearsall/the-galley/actions/workflows/ci.yml)
