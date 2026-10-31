@@ -9,6 +9,7 @@
 The Galley is a web app for low-effort meal planning and grocery shopping, built around gluten-free and dairy-free eating. It pairs a fixed, macro-targeted meal plan (calories and protein set in one data file) with a weekly pipeline that uses Claude’s API and web search to keep the product picks current: swapping discontinued items, re-verifying they’re still GF/DF, and refreshing the shopping list. Fork it, set your own targets and constraints, and it keeps itself up to date.
 
 **Live app:** https://jpearsall.github.io/the-galley/
+
 **License:** AGPL-3.0-or-later
 
 ## AI disclosure
