@@ -70,6 +70,9 @@ python3 -m http.server 8000   # serve the app at http://localhost:8000/
 
 Two secrets required (**Settings → Secrets and variables → Actions**):
 
+> [!WARNING]
+> Fine-grained tokens expire by default. When this one does, the refresh fails at the PR step with a 401. Set a renewal reminder.
+
 | Secret | Purpose |
 |---|---|
 | `ANTHROPIC_API_KEY` | Claude API — required for the refresh workflow |
