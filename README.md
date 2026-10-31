@@ -1,4 +1,23 @@
-# The Galley — auto-refresh pipeline
+# The Galley — Meal Planning and Grocery Shopping for Choppy Waters
+
+[![refresh](https://github.com/jpearsall/the-galley/actions/workflows/refresh.yml/badge.svg)](https://github.com/jpearsall/the-galley/actions/workflows/refresh.yml)
+[![CI](https://github.com/jpearsall/the-galley/actions/workflows/ci.yml/badge.svg)](https://github.com/jpearsall/the-galley/actions/workflows/ci.yml)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
+
+## Description
+
+The Galley is a web app for low-effort meal planning and grocery shopping, built around gluten-free and dairy-free eating. It pairs a fixed, macro-targeted meal plan (calories and protein set in one data file) with a weekly pipeline that uses Claude’s API and web search to keep the product picks current: swapping discontinued items, re-verifying they’re still GF/DF, and refreshing the shopping list. Fork it, set your own targets and constraints, and it keeps itself up to date.
+
+**Live app:** https://jpearsall.github.io/the-galley/
+**License:** AGPL-3.0-or-later
+
+## AI disclosure
+
+- **Built with AI assistance.** Much of the code, docs, and pipeline was written with Claude (Anthropic), including Claude Code, and reviewed by me.
+- **Data is AI-maintained.** Each weekly refresh uses the Claude API with web search to update product picks. Output is schema-validated, but validation checks structure, not truth.
+- **Not medical or dietary advice.** Always check labels for gluten and dairy before buying; formulations change. Talk to your doctor or a dietitian about your targets.
+
+## Auto-Refresh Pipeline
 
 Keeps the app's **data** current on a weekly cadence without ever regenerating the
 app itself. The app shell (HTML/JS) is fixed; only `data/galley-data.json` changes.
