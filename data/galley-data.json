@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-01",
+  "updated": "2026-11-08",
   "targets": {
     "calLo": 2800,
     "calHi": 3200,
@@ -20,79 +20,79 @@
     "klime": {
       "brand": "Kevin's Natural Foods",
       "nm": "Cilantro Lime Chicken",
-      "note": "Fully cooked · GF + DF · certified GF (GFCO) · paleo/keto certified · verified active Nov 1 2026 at Safeway/ShopRite/Save Mart/New Seasons/Lunds & Byerlys/Amazon/Kevin's site",
+      "note": "Fully cooked · GF + DF · certified GF (GFCO) · paleo/keto certified · verified active Nov 8 2026 at Safeway/ShopRite/Save Mart/New Seasons/Lunds & Byerlys/Costco/Amazon/Kevin's site",
       "q": "Kevins Natural Foods Cilantro Lime Chicken"
     },
     "ksich": {
       "brand": "Kevin's Natural Foods",
       "nm": "Sichuan Chicken Green Bean Stir-Fry",
-      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min · verified active Nov 1 2026 at Kevin's site/Walmart Business/Costco (Oct 16 2026)/Gerbes · Instacart 32 oz bulk auto-tag incorrectly flags not-GF — Kevin's site, Walmart, Costco tracker, and individual-size retailer listings all confirm GF+DF",
+      "note": "GF + DF · soy-free sichuan sauce · coconut aminos · ~7 min · verified active Nov 8 2026 at Kevin's site/Walmart Business/Costco (Oct 16 2026)/Gerbes · Instacart 32 oz bulk auto-tag incorrectly flags not-GF — Kevin's site, Walmart Business, Costco tracker, and individual-size retailer listings all confirm GF+DF",
       "q": "Kevins Natural Foods Sichuan Chicken Green Bean Stir Fry"
     },
     "klemon": {
       "brand": "Kevin's Natural Foods",
       "nm": "Lemongrass Chicken",
-      "note": "GF + DF · coconut-milk sauce · no refined sugar · certified GF (GFCO) · verified active Nov 1 2026 at Costco (Oct 9 2026)/Thrive Market/Instacart/Giant Food Stores/Lunds & Byerlys/Amazon",
+      "note": "GF + DF · coconut-milk sauce · no refined sugar · certified GF (GFCO) · verified active Nov 8 2026 at Amazon/Thrive Market/Instacart/Giant Food Stores/Lunds & Byerlys/Sprouts/Publix",
       "q": "Kevins Natural Foods Lemongrass Chicken"
     },
     "kkorean": {
       "brand": "Kevin's Natural Foods",
       "nm": "Korean-Style BBQ Chicken",
-      "note": "GF + DF · soy-free bulgogi sauce · coconut aminos · certified GF (GFCO) · verified active Nov 1 2026 at Kroger/Sprouts/Thrive Market/Hannaford/ShopRite/Lunds & Byerlys",
+      "note": "GF + DF · soy-free bulgogi sauce · coconut aminos · certified GF (GFCO) · verified active Nov 8 2026 at Kroger/Sprouts/Thrive Market/ShopRite/Instacart/King's Food Markets/Giant Food Stores",
       "q": "Kevins Natural Foods Korean BBQ Chicken"
     },
     "kroast": {
       "brand": "Kevin's Natural Foods",
       "nm": "Roasted Garlic Chicken",
-      "note": "GF + DF · coconut-milk cream sauce · certified GF (GFCO) · high protein · current formula contains no dairy ingredients (older Amazon listing showed legacy ghee formula; all current retail listings — Lunds & Byerlys Oct 2026, Kroger, Walmart, Jewel-Osco, Fairway — confirm no gluten/dairy/soy) · verified active Nov 1 2026",
+      "note": "GF + DF · coconut-milk cream sauce · certified GF (GFCO) · high protein · no gluten/dairy/soy ingredients confirmed (Lunds & Byerlys Jun 2026, Shaw's, Walmart, Fairway Aug 2026, Harmons, Macey's all confirm no gluten/dairy/soy) · verified active Nov 8 2026",
       "q": "Kevins Natural Foods Roasted Garlic Chicken"
     },
     "kbeef": {
       "brand": "Kevin's Natural Foods",
       "nm": "Mongolian-Style Beef",
-      "note": "GF + DF · certified GF (GFCO) · soy-free · grass-fed beef · coconut aminos sauce · verified active Nov 1 2026 at Sprouts/Harmons/Lin's Fresh Market/Instacart/Amazon/endlessmarket.com",
+      "note": "GF + DF · certified GF (GFCO) · soy-free · grass-fed beef · coconut aminos sauce · verified active Nov 8 2026 at Sprouts/Harmons/Lin's Fresh Market/Instacart/Amazon/endlessmarket.com/easylunches.com",
       "q": "Kevins Natural Foods Mongolian Beef"
     },
     "kthai": {
       "brand": "Kevin's Natural Foods",
       "nm": "Thai-Style Coconut Chicken",
-      "note": "GF + DF · coconut-milk curry · certified GF (GFCO) · paleo certified · no gluten/dairy/soy ingredients confirmed · verified active Nov 1 2026 at Kroger/King Soopers/Sprouts/Randalls/Food Lion/Lunds & Byerlys/Kevin's site",
+      "note": "GF + DF · coconut-milk curry · certified GF (GFCO) · paleo/keto certified · dairy-free confirmed on Kevin's site · verified active Nov 8 2026 at Kroger/King Soopers/Sprouts/Safeway/Publix/Instacart/Kevin's site (offers valid through Nov 16 2026)",
       "q": "Kevins Natural Foods Thai Style Coconut Chicken"
     },
     "ktikka": {
       "brand": "Kevin's Natural Foods",
       "nm": "Chicken Tikka Masala",
-      "note": "GF + DF · coconut-milk tomato sauce · coconut butter (no ghee/dairy) · listed under Kevin's Dairy Free entrée collection · confirmed GF on Instacart/Vons/Pavilions/Fresh Thyme/Harmons · verified active Nov 1 2026",
+      "note": "GF + DF · current formula uses coconut butter/coconut oil (no ghee/dairy) · coconut-milk tomato sauce · older Amazon ASIN listed legacy ghee formula — all current retail listings (Instacart/Star Market/Pavilions/Fresh Thyme/Harmons/easylunches.com) confirm dairy-free formula · certified GF · verified active Nov 8 2026",
       "q": "Kevins Natural Foods Chicken Tikka Masala"
     },
     "kteriyaki": {
       "brand": "Kevin's Natural Foods",
       "nm": "Teriyaki-Style Chicken",
-      "note": "GF + DF · soy-free teriyaki · coconut aminos · certified GF · verified active Nov 1 2026 at Kroger/Lunds & Byerlys/Kevin's site",
+      "note": "GF + DF · soy-free teriyaki · coconut aminos · certified GF · listed on Kevin's GF entrée collection page · verified active Nov 8 2026 at Kroger/Lunds & Byerlys/Kevin's site",
       "q": "Kevins Natural Foods Teriyaki Style Chicken"
     },
     "khoney": {
       "brand": "Kevin's Natural Foods",
       "nm": "Honey Garlic Chicken Stir-Fry",
-      "note": "GF + DF · soy-free honey garlic sauce · coconut aminos · certified GF (GFCO) · verified active Nov 1 2026 at Walmart/Hannaford/Kevin's site dairy-free collection · Instacart 32 oz bulk tag incorrect — individual-size listings confirm GF+DF",
+      "note": "GF + DF · soy-free honey garlic sauce · coconut aminos · certified GF (GFCO) · listed on Kevin's GF entrée collection page Nov 8 2026 · individual-size listings confirm GF+DF · Instacart 32 oz bulk tag incorrect",
       "q": "Kevins Natural Foods Honey Garlic Chicken Stir Fry"
     },
     "amychili": {
       "brand": "Amy's",
       "nm": "Organic Black Bean Chili",
-      "note": "GF + DF · vegan · certified organic · confirmed GF+DF on Amy's site & Kroger/Walmart/Amazon · verified active Nov 1 2026",
+      "note": "GF + DF · vegan · certified organic · confirmed GF+DF on Amy's site & Kroger/Walmart/Amazon · verified active Nov 8 2026",
       "q": "Amys Organic Black Bean Chili gluten free dairy free"
     },
     "amythai": {
       "brand": "Amy's",
       "nm": "Thai Red Curry Bowl",
-      "note": "GF + DF · coconut-milk curry · jasmine rice · vegan · confirmed GF+DF on Amy's site & Kroger/Hannaford/Fry's · verified active Nov 1 2026",
+      "note": "GF + DF · coconut-milk curry · jasmine rice · vegan · confirmed GF+DF on Amy's site & Kroger/Hannaford/Fry's · verified active Nov 8 2026",
       "q": "Amys Thai Red Curry gluten free dairy free"
     },
     "rx": {
       "brand": "RXBAR",
       "nm": "Protein Bar",
-      "note": "GF + DF · ~12g protein · made from egg whites, dates, nuts · verified active Nov 1 2026",
+      "note": "GF + DF · ~12g protein · made from egg whites, dates, nuts · verified active Nov 8 2026",
       "q": "RXBAR",
       "cal": 210,
       "p": 12,
@@ -103,7 +103,7 @@
     "chomps": {
       "brand": "Chomps",
       "nm": "Meat Sticks",
-      "note": "GF + DF · no fillers · high protein · verified active Nov 1 2026",
+      "note": "GF + DF · no fillers · high protein · verified active Nov 8 2026",
       "q": "Chomps meat sticks",
       "cal": 200,
       "p": 18,
@@ -114,7 +114,7 @@
     "bada": {
       "brand": "Bada Bean Bada Boom",
       "nm": "Roasted Broad Beans",
-      "note": "GF + DF · crunchy plant protein · vegan · verified active Nov 1 2026 at CVS/Kroger/Albertsons/Safeway/Sprouts/Amazon/direct site",
+      "note": "GF + DF · crunchy plant protein · vegan · verified active Nov 8 2026 at CVS/Kroger/Albertsons/Safeway/Sprouts/Amazon/direct site",
       "q": "Bada Bean Bada Boom broad beans",
       "cal": 200,
       "p": 12,
@@ -136,79 +136,79 @@
     "go": {
       "brand": "GoMacro",
       "nm": "MacroBar",
-      "note": "GF + DF · USDA Organic · Certified Vegan · Certified Gluten-Free · Non-GMO Project Verified · free of dairy, gluten, and soy · verified active Nov 1 2026 at Whole Foods/Thrive Market/gomacro.com",
+      "note": "GF + DF · USDA Organic · Certified Vegan · Certified Gluten-Free · Non-GMO Project Verified · free of dairy, gluten, and soy · verified active Nov 8 2026 at Whole Foods/Thrive Market/gomacro.com",
       "q": "GoMacro MacroBar"
     },
     "partake": {
       "brand": "Partake Foods",
       "nm": "Soft Baked Cookies",
-      "note": "Certified GF + DF · allergen-free · free from top 9 allergens · dedicated GF facility · baked in facility free of all top-9 allergens · verified active Nov 1 2026 at Target/Whole Foods/Walmart/Amazon/partakefoods.com",
+      "note": "Certified GF + DF · allergen-free · free from top 9 allergens · dedicated GF facility · verified active Nov 8 2026 at Target/Whole Foods/Walmart/Amazon/partakefoods.com",
       "q": "Partake Foods soft baked cookies gluten free dairy free"
     },
     "thegfb": {
       "brand": "The GFB",
       "nm": "Protein Bites",
-      "note": "Certified GF + DF · allergen-friendly · vegan · non-GMO · soy-free · 4-5g protein per serving · made in dedicated GF facility · verified active Nov 1 2026 at Whole Foods/Amazon/theglutenfreebar.com",
+      "note": "Certified GF + DF · allergen-friendly · vegan · non-GMO · soy-free · 4-5g protein per serving · made in dedicated GF facility · verified active Nov 8 2026 at Whole Foods/Amazon/theglutenfreebar.com",
       "q": "The GFB protein bites gluten free dairy free"
     },
     "skinny": {
       "brand": "SkinnyPop",
       "nm": "Popcorn",
-      "note": "GF + DF · non-GMO · simple ingredients · verified active Nov 1 2026",
+      "note": "GF + DF · non-GMO · simple ingredients · verified active Nov 8 2026",
       "q": "SkinnyPop popcorn"
     },
     "lara": {
       "brand": "LÄRABAR",
       "nm": "Fruit & Nut Bar",
-      "note": "GF + DF · whole-food · minimal ingredients · verified active Nov 1 2026",
+      "note": "GF + DF · whole-food · minimal ingredients · verified active Nov 8 2026",
       "q": "Larabar"
     },
     "thats": {
       "brand": "That's It",
       "nm": "Fruit Bars",
-      "note": "GF + DF · 2 ingredients only · verified active Nov 1 2026",
+      "note": "GF + DF · 2 ingredients only · verified active Nov 8 2026",
       "q": "Thats It fruit bars"
     },
     "marys": {
       "brand": "Mary's Gone Crackers",
       "nm": "Seed Crackers",
-      "note": "GF + DF · certified GF · organic seeds · verified active Nov 1 2026",
+      "note": "GF + DF · certified GF · organic seeds · verified active Nov 8 2026",
       "q": "Marys Gone Crackers"
     },
     "hippeas": {
       "brand": "Hippeas",
       "nm": "Chickpea Puffs",
-      "note": "GF + DF · plant-based · vegan certified · verified active Nov 1 2026",
+      "note": "GF + DF · plant-based · vegan certified · verified active Nov 8 2026",
       "q": "Hippeas chickpea puffs"
     },
     "jerky": {
       "brand": "Country Archer",
       "nm": "Beef Jerky",
-      "note": "GF + DF · no MSG · high protein · verified active Nov 1 2026",
+      "note": "GF + DF · no MSG · high protein · verified active Nov 8 2026",
       "q": "Country Archer beef jerky"
     },
     "biena": {
       "brand": "Biena",
       "nm": "Roasted Chickpea Snacks",
-      "note": "GF + DF · allergen-friendly · high fiber · verified active Nov 1 2026 at Costco/Amazon/direct site",
+      "note": "GF + DF · allergen-friendly · high fiber · verified active Nov 8 2026 at Costco/Amazon/direct site",
       "q": "Biena roasted chickpeas"
     },
     "madegood": {
       "brand": "MadeGood",
       "nm": "Granola Minis",
-      "note": "GF + DF · allergen-friendly · made in dedicated facility · verified active Nov 1 2026",
+      "note": "GF + DF · allergen-friendly · made in dedicated facility · verified active Nov 8 2026",
       "q": "MadeGood granola minis"
     },
     "simple": {
       "brand": "Simple Mills",
       "nm": "Almond Flour Crackers",
-      "note": "GF · most flavors DF — verify flavor label · verified active Nov 1 2026",
+      "note": "GF · most flavors DF — verify flavor label · verified active Nov 8 2026",
       "q": "Simple Mills almond flour crackers"
     },
     "dang": {
       "brand": "Dang",
       "nm": "Coconut Chips",
-      "note": "GF + DF · minimal ingredients · toasted coconut · verified active Nov 1 2026",
+      "note": "GF + DF · minimal ingredients · toasted coconut · verified active Nov 8 2026",
       "q": "Dang coconut chips"
     }
   },
@@ -456,53 +456,19 @@
   "rotation": [
     {
       "entrees": [
-        "kbeef",
         "kthai",
-        "amychili",
-        "kteriyaki",
-        "klemon"
-      ],
-      "snacks": [
-        "chomps",
-        "thegfb",
-        "skinny",
-        "biena",
-        "marys",
-        "rx"
-      ]
-    },
-    {
-      "entrees": [
-        "ktikka",
-        "kkorean",
-        "amythai",
-        "khoney",
-        "ksich"
-      ],
-      "snacks": [
-        "go",
-        "lara",
-        "hippeas",
-        "dang",
-        "madegood",
-        "trail"
-      ]
-    },
-    {
-      "entrees": [
         "klime",
-        "kroast",
         "amychili",
-        "kthai",
+        "kkorean",
         "kbeef"
       ],
       "snacks": [
-        "bada",
-        "rx",
-        "simple",
-        "jerky",
-        "thats",
-        "chomps"
+        "chomps",
+        "biena",
+        "skinny",
+        "thegfb",
+        "marys",
+        "rx"
       ]
     },
     {
@@ -510,49 +476,83 @@
         "klemon",
         "ktikka",
         "amythai",
-        "ksich",
-        "kteriyaki"
+        "khoney",
+        "kroast"
       ],
       "snacks": [
+        "lara",
         "go",
-        "skinny",
-        "trail",
-        "partake",
-        "biena",
-        "thegfb"
+        "dang",
+        "hippeas",
+        "madegood",
+        "trail"
       ]
     },
     {
       "entrees": [
-        "kkorean",
-        "khoney",
+        "ksich",
+        "kbeef",
         "amychili",
         "klime",
-        "kroast"
+        "kteriyaki"
       ],
       "snacks": [
-        "madegood",
-        "rx",
         "bada",
-        "hippeas",
-        "marys",
-        "dang"
+        "simple",
+        "rx",
+        "jerky",
+        "thats",
+        "chomps"
       ]
     },
     {
       "entrees": [
         "kthai",
-        "kbeef",
+        "klemon",
         "amythai",
         "ktikka",
-        "klemon"
+        "kkorean"
+      ],
+      "snacks": [
+        "go",
+        "trail",
+        "skinny",
+        "partake",
+        "thegfb",
+        "biena"
+      ]
+    },
+    {
+      "entrees": [
+        "khoney",
+        "kroast",
+        "amychili",
+        "ksich",
+        "klime"
+      ],
+      "snacks": [
+        "rx",
+        "madegood",
+        "bada",
+        "marys",
+        "hippeas",
+        "dang"
+      ]
+    },
+    {
+      "entrees": [
+        "kbeef",
+        "kthai",
+        "amythai",
+        "klemon",
+        "kteriyaki"
       ],
       "snacks": [
         "simple",
         "chomps",
         "go",
-        "jerky",
         "lara",
+        "jerky",
         "thats"
       ]
     }
